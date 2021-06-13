@@ -1,0 +1,12 @@
+ module Mux2_1	#(parameter N = 32)	(input logic[N-1:0] bline, pcline
+											input logic[1:0] selector,
+											output logic[N-1:0] result);
+	
+	always_comb
+		case(selector)
+			2'b00 : result = bline;
+			2'b01 : result = pcline;
+			default : result = 'z;
+		endcase
+		
+endmodule 

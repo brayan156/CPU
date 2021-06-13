@@ -1,0 +1,15 @@
+module ROM (input logic [31:0] adress,
+				output logic [7:0] rdata);
+				
+	logic [7:0][11:0] ROM;
+	
+	initial begin
+		$readmemh("ROM.txt",ROM);
+	end
+	
+	
+	always_comb begin
+		rdata=ROM[address[11:0]];
+	end 
+	
+endmodule 

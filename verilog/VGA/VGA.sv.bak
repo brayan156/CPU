@@ -1,0 +1,21 @@
+module VGA (input logic clk, reset, realizar_jugada,
+							   input logic[3:0] movimiento,
+								output logic [7:0] R, G, B,
+								output logic hsync, vsync, clk2, blank, sync);
+								
+	assign sync=1'b0;
+	
+	logic pasarlinea;
+	logic [9:0] contadorh, contadorv;
+	
+	clk_mitad_MHz cmh(clk, clk2);
+	
+	sincronizadorV sv(pasarlinea, reset, contadorv, vsync);
+   sincronizadorH sh(clk2,reset, contadorh, pasarlinea, hsync); 
+	logic [2:0][2:0][1:0] matriz;
+	logic [1:0] victoria, turno;
+	logic [3:0] jugada_maquina, comogana;
+	controlador_logico cl(clk, reset, realizar_jugada, movimiento, matriz, victoria, turno, jugada_maquina, comogana);
+	controlador_color cc(contadorh, contadorv, victoria, turno, jugada_maquina, comogana, matriz, blank, R, G, B);
+
+endmodule 

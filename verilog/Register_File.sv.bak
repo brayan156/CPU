@@ -1,0 +1,14 @@
+module Register_File(input logic clk,
+input logic rwboolean,
+input logic [3:0] ra1, ra2, rwselector,
+input logic [31:0] rwdata, r15,
+output logic [31:0] rd1, rd2);
+logic [31:0] register[14:0];
+
+	always_ff @(posedge clk)
+		if (rwboolean) register[rwselector] <= rwdata;
+		assign rd1 = (ra1 == 4'b1111) ? r15 : register[ra1];
+		assign rd2 = (ra2 == 4'b1111) ? r15 : register[ra2];
+		
+		
+endmodule 

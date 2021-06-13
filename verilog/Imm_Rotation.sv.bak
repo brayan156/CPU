@@ -1,0 +1,14 @@
+module Imm_Rotation(input logic [31:0] imm_extended,rotation_value,
+							input logic [1:0] immediatetype,
+							output logic [31:0] result);
+	
+	logic [31:0] r_twice;
+	assign r_twice=rotation_value*2;
+
+	
+	always_comb
+		if(immediatetype!==2'b00 || rotation_value==0) result=imm_extended;
+		else if (immediatetype==2'b00) result={imm_extended[r_twice-1,0],imm_extended[31:r_twice]};
+		else result=imm_extended;
+		endcase
+endmodule 

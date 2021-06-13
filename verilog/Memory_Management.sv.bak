@@ -1,0 +1,61 @@
+  
+module Memory_Management (input logic clk,swxor2,swxor1,swxor0,swxor,swxnot,swadd,swinit,wboolean
+								 input logic [31:0] address,wdata,
+								 output logic [31:0] rdata,);
+						 
+	logic [31:0] mapadress;
+	logic [7:0] ROMdata, RAMdata;
+						 
+	RAM ram(clk, wboolean, mapadress, wdata[7:0], RAMdata);
+	ROM rom(mapadress, ROMdata);
+	
+	always_comb
+		begin
+			if (address >= '0x000 && address < '0x100)
+				begin
+					mapadress = address;
+					rdata = { 24'b0,ROMdata};
+				end
+			else if (address >= '0x100 && address < '0x200)
+				begin
+					mapadress = address - '0x100;
+					rdata = { 24'b0,RAMdata};
+				end
+			else if (address == '0x204)
+				begin
+					mapadress = 32'b0;
+					rdata = {31'b0, swxor2};
+				end
+			else if (address == '0x208)
+				begin
+					mapadress = 32'b0;
+					rdata = {31'b0, swxor1};
+				end
+			else if (address == '0x20C)
+				begin
+					mapadress = 32'b210;
+					rdata = {31'b0, swxor0};
+				end
+			else if (address == '0x214)
+				begin
+					mapadress = 32'b0;
+					rdata = {31'b0, swxor};
+				end
+			else if (address == '0x218)
+				begin
+					mapadress = 32'b0;
+					rdata = {31'b0, swnot};
+				end
+			else if (address == '0x218)
+				begin
+					mapadress = 32'b0;
+					rdata = {31'b0, swadd};
+				end
+			else
+				begin
+					mapadress = 32'b0;
+					rdata = 32'b0;
+				end
+		end
+						 
+endmodule 

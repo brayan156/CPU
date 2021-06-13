@@ -1,0 +1,429 @@
+# Reading pref.tcl
+# do Proyecto_cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:43 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Decoder.sv 
+# -- Compiling module Decoder
+# 
+# Top level modules:
+# 	Decoder
+# End time: 20:03:43 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Register_File.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:43 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Register_File.sv 
+# -- Compiling module Register_File
+# 
+# Top level modules:
+# 	Register_File
+# End time: 20:03:43 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:43 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Control_Unit.sv 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 20:03:43 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Condition_Logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Condition_Logic.sv 
+# -- Compiling module Condition_Logic
+# 
+# Top level modules:
+# 	Condition_Logic
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_nb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_nb.sv 
+# -- Compiling module sumador_nb
+# 
+# Top level modules:
+# 	sumador_nb
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_1b.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_1b.sv 
+# -- Compiling module sumador_1b
+# 
+# Top level modules:
+# 	sumador_1b
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftR.sv 
+# -- Compiling module shiftR
+# 
+# Top level modules:
+# 	shiftR
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftL.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftL.sv 
+# -- Compiling module shiftL
+# 
+# Top level modules:
+# 	shiftL
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/restador_nb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/restador_nb.sv 
+# -- Compiling module restador_nb
+# 
+# Top level modules:
+# 	restador_nb
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_nb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_nb.sv 
+# -- Compiling module negador_nb
+# 
+# Top level modules:
+# 	negador_nb
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_1b.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_1b.sv 
+# -- Compiling module negador_1b
+# 
+# Top level modules:
+# 	negador_1b
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/Mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/Mux.sv 
+# -- Compiling module Mux
+# 
+# Top level modules:
+# 	Mux
+# End time: 20:03:44 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/multiplicador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:44 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/multiplicador.sv 
+# -- Compiling module multiplicador
+# 
+# Top level modules:
+# 	multiplicador
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/modulo_nb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/modulo_nb.sv 
+# -- Compiling module modulo_nb
+# 
+# Top level modules:
+# 	modulo_nb
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_overflow.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_overflow.sv 
+# -- Compiling module flag_overflow
+# 
+# Top level modules:
+# 	flag_overflow
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_negativo.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_negativo.sv 
+# -- Compiling module flag_negativo
+# 
+# Top level modules:
+# 	flag_negativo
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_cero.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_cero.sv 
+# -- Compiling module flag_cero
+# 
+# Top level modules:
+# 	flag_cero
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_carry.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_carry.sv 
+# -- Compiling module flag_carry
+# 
+# Top level modules:
+# 	flag_carry
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/divisor_nb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/divisor_nb.sv 
+# -- Compiling module divisor_nb
+# 
+# Top level modules:
+# 	divisor_nb
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_xor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_xor.sv 
+# -- Compiling module c_xor
+# 
+# Top level modules:
+# 	c_xor
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_or.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_or.sv 
+# -- Compiling module c_or
+# 
+# Top level modules:
+# 	c_or
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_and.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_and.sv 
+# -- Compiling module c_and
+# 
+# Top level modules:
+# 	c_and
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/ALU {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Memory_Management.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Memory_Management.sv 
+# -- Compiling module Memory_Management
+# 
+# Top level modules:
+# 	Memory_Management
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/RAM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/RAM.sv 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Mux2_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Mux2_1.sv 
+# -- Compiling module Mux2_1
+# 
+# Top level modules:
+# 	Mux2_1
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/PC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/PC.sv 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 20:03:45 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Extender.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:45 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Extender.sv 
+# -- Compiling module Extender
+# 
+# Top level modules:
+# 	Extender
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ff_enable.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ff_enable.sv 
+# -- Compiling module ff_enable
+# 
+# Top level modules:
+# 	ff_enable
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/condition_check.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/condition_check.sv 
+# -- Compiling module condition_check
+# 
+# Top level modules:
+# 	condition_check
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv 
+# -- Compiling module CPU_VGA
+# 
+# Top level modules:
+# 	CPU_VGA
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/MuxMOV.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/MuxMOV.sv 
+# -- Compiling module MuxMOV
+# 
+# Top level modules:
+# 	MuxMOV
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Imm_Rotation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Imm_Rotation.sv 
+# -- Compiling module Imm_Rotation
+# 
+# Top level modules:
+# 	Imm_Rotation
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog/test {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/test/CPU_VGA_test.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/test" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/test/CPU_VGA_test.sv 
+# -- Compiling module CPU_VGA_test
+# 
+# Top level modules:
+# 	CPU_VGA_test
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv 
+# -- Compiling module Instruction_Memory
+# 
+# Top level modules:
+# 	Instruction_Memory
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/braya/Desktop/taller\ de\ diseno/proyecto/verilog {C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:46 on Jun 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/verilog" C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 20:03:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.CPU_VGA_test
+# vsim work.CPU_VGA_test 
+# Start time: 20:03:51 on Jun 12,2021
+# Loading sv_std.std
+# Loading work.CPU_VGA_test
+# Loading work.CPU_VGA
+# Loading work.CPU
+# Loading work.Control_Unit
+# Loading work.Decoder
+# Loading work.Condition_Logic
+# Loading work.ff_enable
+# Loading work.condition_check
+# Loading work.Mux2_1
+# Loading work.PC
+# Loading work.sumador_nb
+# Loading work.Register_File
+# Loading work.MuxMOV
+# Loading work.Extender
+# Loading work.Imm_Rotation
+# Loading work.ALU
+# Loading work.restador_nb
+# Loading work.negador_nb
+# Loading work.negador_1b
+# Loading work.multiplicador
+# Loading work.divisor_nb
+# Loading work.modulo_nb
+# Loading work.c_and
+# Loading work.c_or
+# Loading work.c_xor
+# Loading work.shiftL
+# Loading work.shiftR
+# Loading work.Mux
+# Loading work.flag_negativo
+# Loading work.flag_carry
+# Loading work.flag_cero
+# Loading work.flag_overflow
+# Loading work.Instruction_Memory
+# Loading work.Memory_Management
+# Loading work.RAM
+# Loading work.ROM
+# Loading work.sumador_1b
+add wave -position insertpoint  \
+sim:/CPU_VGA_test/uut/char_data
+run 100000
+# End time: 20:06:16 on Jun 12,2021, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0

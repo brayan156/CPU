@@ -1,0 +1,13 @@
+module RAM (input logic	clk,wboolean
+				input logic [31:0] adress,
+				output logic [7:0] wdata,rdata);
+				
+	logic [7:0] ROM[63:0];
+		
+	
+	always_comb begin
+		if (wboolean) ROM[adress]=wdata;
+		rdata=ROM[address];
+	end 
+	
+endmodule 

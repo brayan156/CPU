@@ -1,0 +1,1002 @@
+Analysis & Synthesis report for Proyecto_cpu
+Sat Jun 12 20:48:48 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1
+ 13. Parameter Settings for User Entity Instance: CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg0
+ 14. Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:pcmux
+ 15. Parameter Settings for User Entity Instance: CPU:arm|PC:pc
+ 16. Parameter Settings for User Entity Instance: CPU:arm|sumador_nb:sump4
+ 17. Parameter Settings for User Entity Instance: CPU:arm|sumador_nb:sump8
+ 18. Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:rselector1mux
+ 19. Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:rselector2mux
+ 20. Parameter Settings for User Entity Instance: CPU:arm|MuxMOV:movmox
+ 21. Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:Bmux
+ 22. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut
+ 23. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|sumador_nb:sum
+ 24. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|restador_nb:rest
+ 25. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg
+ 26. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|restador_nb:rest|sumador_nb:resta
+ 27. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|multiplicador:mult
+ 28. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|divisor_nb:div
+ 29. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|modulo_nb:mod
+ 30. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|c_and:cand
+ 31. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|c_or:cor
+ 32. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|c_xor:cxor
+ 33. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|shiftL:Lshift
+ 34. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|shiftR:Rshift
+ 35. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|Mux:m
+ 36. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|flag_cero:fz
+ 37. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|flag_overflow:fv
+ 38. Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|flag_overflow:fv|divisor_nb:div
+ 39. Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:resmux
+ 40. Parameter Settings for User Entity Instance: VGA:vga|Pixels:p
+ 41. Port Connectivity Checks: "VGA:vga|Pixels:p|Font_Rom:rom"
+ 42. Port Connectivity Checks: "VGA:vga|Pixels:p"
+ 43. Port Connectivity Checks: "CPU:arm|ALU:uut"
+ 44. Port Connectivity Checks: "CPU:arm|Imm_Rotation:ir"
+ 45. Port Connectivity Checks: "CPU:arm|MuxMOV:movmox"
+ 46. Port Connectivity Checks: "CPU:arm|Mux2_1:rselector1mux"
+ 47. Port Connectivity Checks: "CPU:arm|sumador_nb:sump8"
+ 48. Port Connectivity Checks: "CPU:arm|sumador_nb:sump4"
+ 49. Post-Synthesis Netlist Statistics for Top Partition
+ 50. Elapsed Time Per Partition
+ 51. Analysis & Synthesis Messages
+ 52. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Jun 12 20:48:48 2021       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; Proyecto_cpu                                ;
+; Top-level Entity Name           ; CPU_VGA                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 25                                          ;
+; Total pins                      ; 38                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; CPU_VGA            ; Proyecto_cpu       ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+; VGA/text-module/Pixels.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixels.sv     ;         ;
+; VGA/VGA.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv                    ;         ;
+; VGA/sincronizadorV.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/sincronizadorV.sv         ;         ;
+; VGA/sincronizadorH.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/sincronizadorH.sv         ;         ;
+; VGA/controlador_color.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/controlador_color.sv      ;         ;
+; VGA/clk_mitad_MHz.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/clk_mitad_MHz.sv          ;         ;
+; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Decoder.sv                    ;         ;
+; Register_File.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Register_File.sv              ;         ;
+; Instruction_Memory.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv         ;         ;
+; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Control_Unit.sv               ;         ;
+; Condition_Logic.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Condition_Logic.sv            ;         ;
+; ALU/sumador_nb.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_nb.sv             ;         ;
+; ALU/sumador_1b.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_1b.sv             ;         ;
+; ALU/shiftR.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftR.sv                 ;         ;
+; ALU/shiftL.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftL.sv                 ;         ;
+; ALU/restador_nb.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/restador_nb.sv            ;         ;
+; ALU/negador_nb.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_nb.sv             ;         ;
+; ALU/negador_1b.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_1b.sv             ;         ;
+; ALU/Mux.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/Mux.sv                    ;         ;
+; ALU/multiplicador.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/multiplicador.sv          ;         ;
+; ALU/modulo_nb.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/modulo_nb.sv              ;         ;
+; ALU/flag_overflow.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_overflow.sv          ;         ;
+; ALU/flag_negativo.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_negativo.sv          ;         ;
+; ALU/flag_cero.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_cero.sv              ;         ;
+; ALU/flag_carry.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_carry.sv             ;         ;
+; ALU/divisor_nb.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/divisor_nb.sv             ;         ;
+; ALU/c_xor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_xor.sv                  ;         ;
+; ALU/c_or.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_or.sv                   ;         ;
+; ALU/c_and.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_and.sv                  ;         ;
+; ALU/ALU.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv                    ;         ;
+; Memory_Management.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Memory_Management.sv          ;         ;
+; ROM.txt                          ; yes             ; User File                    ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.txt                       ;         ;
+; ROM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv                        ;         ;
+; RAM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/RAM.sv                        ;         ;
+; Mux2_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Mux2_1.sv                     ;         ;
+; PC.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/PC.sv                         ;         ;
+; Extender.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Extender.sv                   ;         ;
+; ff_enable.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ff_enable.sv                  ;         ;
+; CPU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv                        ;         ;
+; condition_check.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/condition_check.sv            ;         ;
+; VGA/text-module/Font_Rom.vhd     ; yes             ; User VHDL File               ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Font_Rom.vhd  ;         ;
+; VGA/text-module/commonPak.vhd    ; yes             ; User VHDL File               ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/commonPak.vhd ;         ;
+; CPU_VGA.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv                    ;         ;
+; binfile.txt                      ; yes             ; User File                    ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/binfile.txt                   ;         ;
+; MuxMOV.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/MuxMOV.sv                     ;         ;
+; Imm_Rotation.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Imm_Rotation.sv               ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 17          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 31          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 2           ;
+;     -- 5 input functions                    ; 3           ;
+;     -- 4 input functions                    ; 4           ;
+;     -- <=3 input functions                  ; 22          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 25          ;
+;                                             ;             ;
+; I/O pins                                    ; 38          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 23          ;
+; Total fan-out                               ; 220         ;
+; Average fan-out                             ; 1.67        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name       ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------+--------------+
+; |CPU_VGA                     ; 31 (0)              ; 25 (0)                    ; 0                 ; 0          ; 38   ; 0            ; |CPU_VGA                              ; CPU_VGA           ; work         ;
+;    |VGA:vga|                 ; 31 (0)              ; 25 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga                      ; VGA               ; work         ;
+;       |clk_mitad_MHz:cmh|    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|clk_mitad_MHz:cmh    ; clk_mitad_MHz     ; work         ;
+;       |controlador_color:cc| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|controlador_color:cc ; controlador_color ; work         ;
+;       |sincronizadorH:sh|    ; 14 (14)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|sincronizadorH:sh    ; sincronizadorH    ; work         ;
+;       |sincronizadorV:sv|    ; 15 (15)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|sincronizadorV:sv    ; sincronizadorV    ; work         ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; VGA:vga|Pixels:p|pixel                ; Stuck at GND due to stuck port data_in ;
+; VGA:vga|clk_mitad_MHz:cmh|tiempo[1]   ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 25    ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 22    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; VGA:vga|sincronizadorH:sh|hsync        ; 1       ;
+; VGA:vga|sincronizadorV:sv|vsync        ; 1       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |CPU_VGA|VGA:vga|sincronizadorH:sh|contador[9] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |CPU_VGA|VGA:vga|sincronizadorV:sv|contador[9] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg0 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:pcmux ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|PC:pc ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; N              ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|sumador_nb:sump4 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|sumador_nb:sump8 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:rselector1mux ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:rselector2mux ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|MuxMOV:movmox ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:Bmux ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; N              ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; N              ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|sumador_nb:sum ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|restador_nb:rest ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|restador_nb:rest|sumador_nb:resta ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|multiplicador:mult ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|divisor_nb:div ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|modulo_nb:mod ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|c_and:cand ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|c_or:cor ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|c_xor:cxor ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|shiftL:Lshift ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|shiftR:Rshift ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|Mux:m ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|flag_cero:fz ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|flag_overflow:fv ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|ALU:uut|flag_overflow:fv|divisor_nb:div ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:arm|Mux2_1:resmux ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA:vga|Pixels:p ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; fontWidth      ; 8     ; Signed Integer                       ;
+; fontHeight     ; 16    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA:vga|Pixels:p|Font_Rom:rom"                                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; fontrow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "VGA:vga|Pixels:p"  ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; posX[7..6]  ; Input ; Info     ; Stuck at VCC ;
+; posX[31..8] ; Input ; Info     ; Stuck at GND ;
+; posX[5..4]  ; Input ; Info     ; Stuck at GND ;
+; posX[2..0]  ; Input ; Info     ; Stuck at GND ;
+; posX[3]     ; Input ; Info     ; Stuck at VCC ;
+; posY[7..6]  ; Input ; Info     ; Stuck at VCC ;
+; posY[31..8] ; Input ; Info     ; Stuck at GND ;
+; posY[5..4]  ; Input ; Info     ; Stuck at GND ;
+; posY[2..0]  ; Input ; Info     ; Stuck at GND ;
+; posY[3]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "CPU:arm|ALU:uut" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; ci   ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "CPU:arm|Imm_Rotation:ir"     ;
++-----------------------+-------+----------+--------------+
+; Port                  ; Type  ; Severity ; Details      ;
++-----------------------+-------+----------+--------------+
+; rotation_value[31..4] ; Input ; Info     ; Stuck at GND ;
++-----------------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "CPU:arm|MuxMOV:movmox"   ;
++-------------------+-------+----------+--------------+
+; Port              ; Type  ; Severity ; Details      ;
++-------------------+-------+----------+--------------+
+; zerovalue         ; Input ; Info     ; Stuck at GND ;
+; shiftvalue[31..5] ; Input ; Info     ; Stuck at GND ;
++-------------------+-------+----------+--------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "CPU:arm|Mux2_1:rselector1mux" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; r2   ; Input ; Info     ; Stuck at VCC                   ;
++------+-------+----------+--------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:arm|sumador_nb:sump8"                                                               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; b[31..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[1..0]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[2]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ci       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; co       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:arm|sumador_nb:sump4"                                                               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; b[31..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[1..0]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[2]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ci       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; co       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 25                          ;
+;     CLR               ; 2                           ;
+;     CLR SCLR          ; 20                          ;
+;     ENA               ; 1                           ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 34                          ;
+;     arith             ; 20                          ;
+;         1 data inputs ; 20                          ;
+;     normal            ; 14                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 38                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.60                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sat Jun 12 20:48:41 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto_cpu -c Proyecto_cpu
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file vga/text-module/pixels.sv
+    Info (12023): Found entity 1: Pixels File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixels.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga/vga.sv
+    Info (12023): Found entity 1: VGA File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga/sincronizadorv.sv
+    Info (12023): Found entity 1: sincronizadorV File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/sincronizadorV.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga/sincronizadorh.sv
+    Info (12023): Found entity 1: sincronizadorH File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/sincronizadorH.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga/controlador_color.sv
+    Info (12023): Found entity 1: controlador_color File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/controlador_color.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vga/clk_mitad_mhz.sv
+    Info (12023): Found entity 1: clk_mitad_MHz File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/clk_mitad_MHz.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: Decoder File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
+    Info (12023): Found entity 1: Register_File File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Register_File.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
+    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Control_Unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condition_logic.sv
+    Info (12023): Found entity 1: Condition_Logic File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Condition_Logic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sumador_nb.sv
+    Info (12023): Found entity 1: sumador_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_nb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sumador_1b.sv
+    Info (12023): Found entity 1: sumador_1b File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_1b.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftr.sv
+    Info (12023): Found entity 1: shiftR File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftl.sv
+    Info (12023): Found entity 1: shiftL File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/shiftL.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/restador_nb_test.sv
+    Info (12023): Found entity 1: restador_nb_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/restador_nb_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/restador_nb.sv
+    Info (12023): Found entity 1: restador_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/restador_nb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/negador_nb.sv
+    Info (12023): Found entity 1: negador_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_nb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/negador_1b.sv
+    Info (12023): Found entity 1: negador_1b File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_1b.sv Line: 1
+Warning (12090): Entity "Mux" obtained from "ALU/Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/Mux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/mux.sv
+    Info (12023): Found entity 1: Mux File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/Mux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/multiplicador.sv
+    Info (12023): Found entity 1: multiplicador File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/multiplicador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/modulo_nb.sv
+    Info (12023): Found entity 1: modulo_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/modulo_nb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_overflow.sv
+    Info (12023): Found entity 1: flag_overflow File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_overflow.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_negativo.sv
+    Info (12023): Found entity 1: flag_negativo File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_negativo.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_cero.sv
+    Info (12023): Found entity 1: flag_cero File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_cero.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_carry.sv
+    Info (12023): Found entity 1: flag_carry File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/flag_carry.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/divisor_nb.sv
+    Info (12023): Found entity 1: divisor_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/divisor_nb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/decoc_1b_display_bin.sv
+    Info (12023): Found entity 1: decoc_1b_display_bin File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/decoc_1b_display_bin.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/c_xor.sv
+    Info (12023): Found entity 1: c_xor File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_xor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/c_or.sv
+    Info (12023): Found entity 1: c_or File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_or.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/c_and.sv
+    Info (12023): Found entity 1: c_and File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/c_and.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_test.sv
+    Info (12023): Found entity 1: ALU_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_4b_display.sv
+    Info (12023): Found entity 1: Alu_4b_display File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/Alu_4b_display.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memory_management.sv
+    Info (12023): Found entity 1: Memory_Management File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Memory_Management.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
+    Info (12023): Found entity 1: ROM File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ram.sv
+    Info (12023): Found entity 1: RAM File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/RAM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.sv
+    Info (12023): Found entity 1: Mux2_1 File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Mux2_1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
+    Info (12023): Found entity 1: PC File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/PC.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extender.sv
+    Info (12023): Found entity 1: Extender File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Extender.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test/memory_management_test.sv
+    Info (12023): Found entity 1: Memory_Management_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/test/Memory_Management_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test/extender_test.sv
+    Info (12023): Found entity 1: Extender_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/test/Extender_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ff_enable.sv
+    Info (12023): Found entity 1: ff_enable File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ff_enable.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
+    Info (12023): Found entity 1: CPU File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condition_check.sv
+    Info (12023): Found entity 1: condition_check File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/condition_check.sv Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/wrapper.vhd
+    Info (12022): Found design unit 1: wrapper-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/wrapper.vhd Line: 33
+    Info (12023): Found entity 1: wrapper File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/wrapper.vhd Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/pixel_on_text2.vhd
+    Info (12022): Found design unit 1: Pixel_On_Text2-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixel_On_Text2.vhd Line: 46
+    Info (12023): Found entity 1: Pixel_On_Text2 File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixel_On_Text2.vhd Line: 30
+Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/pixel_on_text.vhd
+    Info (12022): Found design unit 1: Pixel_On_Text-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixel_On_Text.vhd Line: 49
+    Info (12023): Found entity 1: Pixel_On_Text File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixel_On_Text.vhd Line: 30
+Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/font_rom.vhd
+    Info (12022): Found design unit 1: Font_Rom-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Font_Rom.vhd Line: 40
+    Info (12023): Found entity 1: Font_Rom File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Font_Rom.vhd Line: 32
+Info (12021): Found 2 design units, including 0 entities, in source file vga/text-module/commonpak.vhd
+    Info (12022): Found design unit 1: commonPak File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/commonPak.vhd Line: 16
+    Info (12022): Found design unit 2: commonPak-body File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/commonPak.vhd Line: 80
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_vga.sv
+    Info (12023): Found entity 1: CPU_VGA File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file muxmov.sv
+    Info (12023): Found entity 1: MuxMOV File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/MuxMOV.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imm_rotation.sv
+    Info (12023): Found entity 1: Imm_Rotation File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Imm_Rotation.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test/cpu_vga_test.sv
+    Info (12023): Found entity 1: CPU_VGA_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/test/CPU_VGA_test.sv Line: 1
+Info (12127): Elaborating entity "CPU_VGA" for the top level hierarchy
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:arm" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 12
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:arm|Control_Unit:c" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 17
+Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:arm|Control_Unit:c|Decoder:dec" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Control_Unit.sv Line: 14
+Info (12128): Elaborating entity "Condition_Logic" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Control_Unit.sv Line: 15
+Info (12128): Elaborating entity "ff_enable" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Condition_Logic.sv Line: 14
+Info (12128): Elaborating entity "condition_check" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl|condition_check:cc" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Condition_Logic.sv Line: 19
+Info (12128): Elaborating entity "Mux2_1" for hierarchy "CPU:arm|Mux2_1:pcmux" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 22
+Info (12128): Elaborating entity "PC" for hierarchy "CPU:arm|PC:pc" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 23
+Info (12128): Elaborating entity "sumador_nb" for hierarchy "CPU:arm|sumador_nb:sump4" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 26
+Info (12128): Elaborating entity "sumador_1b" for hierarchy "CPU:arm|sumador_nb:sump4|sumador_1b:sum1b2" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/sumador_nb.sv Line: 15
+Info (12128): Elaborating entity "Mux2_1" for hierarchy "CPU:arm|Mux2_1:rselector1mux" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 31
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:arm|Register_File:rf" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 33
+Info (12128): Elaborating entity "MuxMOV" for hierarchy "CPU:arm|MuxMOV:movmox" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 34
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:arm|Extender:ext" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 36
+Info (12128): Elaborating entity "Imm_Rotation" for hierarchy "CPU:arm|Imm_Rotation:ir" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 37
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:arm|ALU:uut" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU.sv Line: 41
+Info (12128): Elaborating entity "restador_nb" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 14
+Info (12128): Elaborating entity "negador_nb" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/restador_nb.sv Line: 8
+Info (12128): Elaborating entity "negador_1b" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg|negador_1b:gen_loop[0].uut" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/negador_nb.sv Line: 8
+Info (12128): Elaborating entity "multiplicador" for hierarchy "CPU:arm|ALU:uut|multiplicador:mult" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 15
+Info (12128): Elaborating entity "divisor_nb" for hierarchy "CPU:arm|ALU:uut|divisor_nb:div" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 16
+Info (12128): Elaborating entity "modulo_nb" for hierarchy "CPU:arm|ALU:uut|modulo_nb:mod" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 17
+Info (12128): Elaborating entity "c_and" for hierarchy "CPU:arm|ALU:uut|c_and:cand" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 19
+Info (12128): Elaborating entity "c_or" for hierarchy "CPU:arm|ALU:uut|c_or:cor" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 20
+Info (12128): Elaborating entity "c_xor" for hierarchy "CPU:arm|ALU:uut|c_xor:cxor" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 21
+Info (12128): Elaborating entity "shiftL" for hierarchy "CPU:arm|ALU:uut|shiftL:Lshift" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 23
+Info (12128): Elaborating entity "shiftR" for hierarchy "CPU:arm|ALU:uut|shiftR:Rshift" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 24
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:arm|ALU:uut|Mux:m" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 28
+Info (12128): Elaborating entity "flag_negativo" for hierarchy "CPU:arm|ALU:uut|flag_negativo:fn" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 31
+Info (12128): Elaborating entity "flag_carry" for hierarchy "CPU:arm|ALU:uut|flag_carry:fC" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 32
+Info (12128): Elaborating entity "flag_cero" for hierarchy "CPU:arm|ALU:uut|flag_cero:fz" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 33
+Info (12128): Elaborating entity "flag_overflow" for hierarchy "CPU:arm|ALU:uut|flag_overflow:fv" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ALU/ALU.sv Line: 34
+Info (12128): Elaborating entity "Instruction_Memory" for hierarchy "Instruction_Memory:im" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 13
+Warning (10850): Verilog HDL warning at Instruction_Memory.sv(7): number of words (60) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv Line: 7
+Warning (10030): Net "Instructiondata.data_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv Line: 3
+Warning (10030): Net "Instructiondata.waddr_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv Line: 3
+Warning (10030): Net "Instructiondata.we_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Instruction_Memory.sv Line: 3
+Info (12128): Elaborating entity "Memory_Management" for hierarchy "Memory_Management:mm" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 16
+Info (12128): Elaborating entity "RAM" for hierarchy "Memory_Management:mm|RAM:ram" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Memory_Management.sv Line: 10
+Info (12128): Elaborating entity "ROM" for hierarchy "Memory_Management:mm|ROM:rom" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/Memory_Management.sv Line: 11
+Warning (10030): Net "ROM.data_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv Line: 4
+Warning (10030): Net "ROM.waddr_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv Line: 4
+Warning (10030): Net "ROM.we_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/ROM.sv Line: 4
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vga" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 18
+Info (12128): Elaborating entity "clk_mitad_MHz" for hierarchy "VGA:vga|clk_mitad_MHz:cmh" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv Line: 14
+Info (12128): Elaborating entity "sincronizadorV" for hierarchy "VGA:vga|sincronizadorV:sv" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv Line: 16
+Warning (10036): Verilog HDL or VHDL warning at sincronizadorV.sv(8): object "sincpulsos" assigned a value but never read File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/sincronizadorV.sv Line: 8
+Info (12128): Elaborating entity "sincronizadorH" for hierarchy "VGA:vga|sincronizadorH:sh" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv Line: 17
+Warning (10036): Verilog HDL or VHDL warning at sincronizadorH.sv(8): object "sincpulsos" assigned a value but never read File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/sincronizadorH.sv Line: 8
+Info (12128): Elaborating entity "Pixels" for hierarchy "VGA:vga|Pixels:p" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv Line: 27
+Info (12128): Elaborating entity "Font_Rom" for hierarchy "VGA:vga|Pixels:p|Font_Rom:rom" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/text-module/Pixels.sv Line: 26
+Info (12128): Elaborating entity "controlador_color" for hierarchy "VGA:vga|controlador_color:cc" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/VGA/VGA.sv Line: 29
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "R[0]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[1]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[2]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[3]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[4]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[5]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[6]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "R[7]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[0]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[1]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[2]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[3]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[4]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[5]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[6]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "G[7]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[0]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[1]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[2]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[3]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[4]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[5]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[6]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "B[7]" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 2
+    Warning (13410): Pin "sync" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 3
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/output_files/Proyecto_cpu.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "swxor2" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "swxor1" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "swxor0" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "swxor" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "swnot" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "swadd" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "swinit" File: C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/CPU_VGA.sv Line: 1
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 33 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4908 megabytes
+    Info: Processing ended: Sat Jun 12 20:48:48 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/braya/Desktop/taller de diseno/proyecto/verilog/output_files/Proyecto_cpu.map.smsg.
+
+

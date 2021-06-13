@@ -1,0 +1,17 @@
+module Extender_test()
+
+	logic [23:0] intstruction;
+	logic [1:0] inmediatetype:
+	logic [31:0] extendeddata;
+	
+	Extender ext (intstruction,inmediatetype,extendeddata)
+	
+	initial begin
+	intstruction=0;inmediatetype=0;extendeddata=0; #1
+	
+	inmediatetype='b10; #1
+	
+	
+	end 
+	
+endmodule 

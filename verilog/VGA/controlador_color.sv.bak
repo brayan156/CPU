@@ -1,0 +1,91 @@
+module controlador_color (input logic [9:0] x, y, 
+								  input logic [1:0] victoria, turno,
+								  input logic [3:0] jugada, comogana,
+								  input logic [2:0][2:0][1:0] matriz,
+								  output logic blank,
+								  output logic [7:0] R, G, B); 
+	
+	logic casillaelegida=0;
+	logic casilla_ocupada=0;
+	logic linea=0;
+	logic [2:0] i, j, n, m;
+	
+	always_latch begin
+		for (i=0; i<3; i++) begin
+			for (j=0; j<3; j++) begin
+				if (i*3+j==jugada & ((x > 218*j+20 & x<218*j+30 & y > 160*i+20 & y<160*(i+1)-20) | 
+					(x > 218*(j+1)-30 & x<218*(j+1)-20 & y > 160*i+20 & y<160*(i+1)-20) |
+					(x > 218*j+20 & x<218*(j+1)-20 & y > 160*i+20 & y<160*i+30) |
+					(x > 218*j+20 & x<218*(j+1)-20 & y > 160*(i+1)-30 & y<160*(i+1)-20))) begin
+					casillaelegida=1;
+				end
+			end
+		end
+		for (n=0; n<3; n++)begin
+			for (m=0; m<3; m++)begin
+				if ((matriz[2-n][2-m]==2'b01 & (x > 218*m + 218/2-10 & x<218*m+218/2+10 & y > 160*n+160/2-30 & y<160*n+160/2+30)) | 
+					(matriz[2-n][2-m]==2'b10 & (x > 218*(m)+218/2-30 & x<218*(m)+218/2+30 & y > 160*(n)+160/2-10 & y<160*(n)+160/2+10))) begin
+					casilla_ocupada=1;
+				end
+			end
+		end
+		
+		// Dibujar victoria
+		if ((comogana==4'b0001 & (x>79 & x<561 & y>70+160*2 & y<90+160*2)) |
+			(comogana==4'b0010 & (x>79 & x<561 & y>70+160 & y<90+160)) |
+			(comogana==4'b0011 & (x>79 & x<561 & y>70 & y<90)) |
+			(comogana==4'b0100 & (x>99+218*2 & x<119+218*2 & y>50 & y<450)) |
+			(comogana==4'b0101 & (x>99+218 & x<119+218 & y>50 & y<450)) |
+			(comogana==4'b0110 & (x>99 & x<119 & y>50 & y<450)) |
+			(comogana==4'b0111 & ((x>79 & x<139 & y>35 & y<65) | (x>297 & x<357 & y>195 & y<225) | (x>515 & x<575 & y>355 & y<385))) |
+			(comogana==4'b1000 & ((x>515 & x<575 & y>35 & y<65) | (x>297 & x<357 & y>195 & y<225) | (x>79 & x<139 & y>355 & y<385)))) begin
+			linea=1;
+		end
+		
+		if (x<640 & y<480) begin  
+			blank=1;
+			if ((x<228 & x>208) | (x<436 & x>416) | (y<170 & y>150) | (y<330 & y>310)) begin  
+				R=8'hff; 
+				G=8'hff; 
+				B=8'hff; 
+			end
+			else if (casillaelegida) begin 
+				R=8'h99; 
+				G=8'h99; 
+				B=8'h55; 
+				casillaelegida=0;
+			end
+			else if (casilla_ocupada) begin 
+				R=8'h33; 
+				G=8'h05; 
+				B=8'h77; 
+				casilla_ocupada=0;
+			end
+			else if (linea) begin
+				if (victoria==2'b01) begin
+					R=8'hff; 
+					G=8'hd7; 
+					B=8'h00;
+				end
+				else begin
+					R=8'hb9; 
+					G=8'h0e; 
+					B=8'h0a;
+				end
+				linea=0;
+			end
+			else begin
+				R=8'h1e; 
+				G=8'hd4; 
+				B=8'h97; 
+			end
+		end 
+		else begin 
+			blank=0;
+			R=8'h0; 
+			G=8'h0; 
+			B=8'h0; 
+		end
+	end
+	
+endmodule 
