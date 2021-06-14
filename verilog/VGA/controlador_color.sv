@@ -10,14 +10,14 @@ module controlador_color (input logic [9:0] x, y,
 		if (x<640 & y<480) begin  
 			blank=1;
 			if (paintPixel) begin  
+				R=8'h00; 
+				G=8'h00; 
+				B=8'h00; 
+			end
+			else begin
 				R=8'hff; 
 				G=8'hff; 
 				B=8'hff; 
-			end
-			else begin
-				R=8'h0; 
-				G=8'h0; 
-				B=8'h0; 
 			end
 		end 
 		else begin 

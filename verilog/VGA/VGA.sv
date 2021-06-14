@@ -8,19 +8,19 @@ module VGA (input logic clk, reset,
 
 	logic pasarlinea, res;
 	logic [9:0] contadorh, contadorv;
-
-	
 	
 	clk_mitad_MHz cmh(clk, clk2);
 	
 	sincronizadorV sv(pasarlinea, reset, contadorv, vsync);
    sincronizadorH sh(clk2,reset, contadorh, pasarlinea, hsync); 
 	
+	// asciiwriter w (clk2, contadorh, contadorv, char_data[40:0], R, G, B, blank);
+	
 	Pixels p (	
                 char_data,
 					 clk,
-                200,
-                200,
+                0,
+                100,
                 contadorh,
                 contadorv,
                 res

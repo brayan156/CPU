@@ -10,16 +10,16 @@ module Pixels (input logic [7:0] text[255:0],
 	parameter fontWidth = 8;
 	parameter fontHeight = 16;
 
-	int fontAddress, charCode, charPos, bitPos;
+	int fontAddress, charPos, bitPos, charCode;
 	logic [fontWidth-1:0] charBitInRow;
 	
-	assign charPos = (horzCoord - posX)/fontWidth + 1;
-	assign bitPos = (horzCoord - posX) % fontWidth;
+	assign charPos = (horzCoord - posX)/fontWidth;
+	assign bitPos = ((horzCoord - posX) % fontWidth);
 	assign charCode = text[charPos];
 	assign fontAddress = charCode*16+(vertCoord - posY);
 	
 	// Initialize ROM with ASCII data
-	Font_Rom rom (
+	Font_Romv rom (
 					clk,
 					fontAddress,
 					charBitInRow
@@ -27,7 +27,7 @@ module Pixels (input logic [7:0] text[255:0],
 					
 	logic inXRange, inYRange;	
 	
-	always_ff @(negedge clk) begin
+	always_ff @(posedge clk) begin
 		// Reset
 		inXRange = 0;
 		inYRange = 0;
@@ -40,7 +40,7 @@ module Pixels (input logic [7:0] text[255:0],
 		
 		// If current pixel is in the vertical range of text
 		if (vertCoord >= posY && vertCoord < posY + fontHeight) begin
-			inYRange = 0;
+			inYRange = 1;
 		end
 		
 		// Need to check if the pixel is on for text
