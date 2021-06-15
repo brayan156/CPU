@@ -25,31 +25,13 @@ module Pixels (input logic [7:0] text[255:0],
 					fontAddress,
 					charBitInRow
 					);
-					
-	logic inXRange, inYRange;
 	
 	always_ff @(posedge clk) begin
 		// Reset
-		inXRange = 0;
-		inYRange = 0;
 		pixel = 0;
-	
-		// If current pixel is in the horizontal range of text
-		if (horzCoord >= posX && horzCoord < posX + 640) begin
-			inXRange = 1;
-		end
-		
-		// If current pixel is in the vertical range of text
-		if (vertCoord >= posY && vertCoord < posY + 480) begin
-			inYRange = 1;
-		end
-		
-		// Need to check if the pixel is on for text
-		if (inXRange && inYRange) begin
-			// FONT_WIDTH-bitPosition: we are reverting the charactor
-			if (charBitInRow[fontWidth - bitPos] == 1 && charPos < 256) begin
-				pixel = 1;
-			end
+		// FONT_WIDTH-bitPosition: we are reverting the charactor
+		if (charBitInRow[fontWidth - bitPos] == 1 && charPos < 256) begin
+			pixel = 1;
 		end
 	end
 					

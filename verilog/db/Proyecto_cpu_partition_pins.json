@@ -108,11 +108,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "blank",
+					"name" : "clk3",
 					"strict" : false
 				},
 				{
-					"name" : "clk3",
+					"name" : "blank",
 					"strict" : false
 				},
 				{
@@ -121,6 +121,34 @@
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "swxor2",
+					"strict" : false
+				},
+				{
+					"name" : "swxor1",
+					"strict" : false
+				},
+				{
+					"name" : "swxor0",
+					"strict" : false
+				},
+				{
+					"name" : "swxor",
+					"strict" : false
+				},
+				{
+					"name" : "swnot",
+					"strict" : false
+				},
+				{
+					"name" : "swadd",
+					"strict" : false
+				},
+				{
+					"name" : "swinit",
 					"strict" : false
 				}
 			]
