@@ -1,13 +1,14 @@
 module Memory_Management(input logic clk, swxor2, swxor1, swxor0, swxor, swnot, swadd, swinit, wboolean,
 								 input logic [31:0] address, wdata,
 								 output logic [31:0] rdata,
-								 output logic [7:0] char_data[255:0]);
+								 output logic [7:0] char_data[255:0],
+								 output logic [7:0] char_data_coded[255:0]);
 						 
 	logic [31:0] mapadress;
 	logic [7:0] ROMdata, RAMdata;
 						 
 	RAM ram(clk, wboolean, mapadress, wdata[7:0], RAMdata, char_data);
-	ROM rom(mapadress, ROMdata);
+	ROM rom(mapadress, ROMdata,char_data_coded);
 	
 	always_comb
 		begin

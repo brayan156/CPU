@@ -1,4 +1,4 @@
-module Pixels (input logic [7:0] text[255:0],
+module Pixels (input logic [7:0] text[703:0],
 					input logic clk,
 					input int posX,
 					input int posY,
@@ -30,7 +30,7 @@ module Pixels (input logic [7:0] text[255:0],
 		// Reset
 		pixel = 0;
 		// FONT_WIDTH-bitPosition: we are reverting the charactor
-		if (charBitInRow[fontWidth - bitPos] == 1 && charPos < 256) begin
+		if (charBitInRow[fontWidth - bitPos] == 1 && charPos < 704) begin
 			pixel = 1;
 		end
 	end
