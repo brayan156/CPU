@@ -13,26 +13,31 @@ module Pixels (input logic [7:0] text[255:0],
 	int fontAddress, charPos, bitPos, charCode;
 	logic [fontWidth-1:0] charBitInRow;
 	
-	assign charPos = (horzCoord - posX)/fontWidth;
+	assign charPos = (horzCoord - posX) / fontWidth;
 	assign bitPos = ((horzCoord - posX) % fontWidth);
 	assign charCode = text[charPos];
-	assign fontAddress = charCode*16+(vertCoord - posY);
+	assign fontAddress = charCode*16 + (vertCoord - posY);
+	
 	
 	// Initialize ROM with ASCII data
-	Font_Romv rom (
+	Font_Rom rom (
 					clk,
 					fontAddress,
 					charBitInRow
 					);
 					
-	logic inXRange, inYRange;	
+	logic inXRange, inYRange;
 	
 	always_ff @(posedge clk) begin
 		// Reset
 		inXRange = 0;
 		inYRange = 0;
 		pixel = 0;
-
+		
+		if (vertCoord % 16 == 0) begin
+			
+		end
+	
 		// If current pixel is in the horizontal range of text
 		if (horzCoord >= posX && horzCoord < posX + (fontWidth * 256)) begin
 			inXRange = 1;

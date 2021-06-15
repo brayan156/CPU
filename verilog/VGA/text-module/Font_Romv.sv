@@ -1,8 +1,8 @@
-module Font_Romv( input logic clk,
+module Font_Romv(input logic clk,
 					  input int addr,
 					  output logic [7:0] fontRow);
 	
-	logic [0:2**11-1][7:0] fontRom;
+	logic [((2**11)-1):0][7:0] fontRom;
 	
 	assign fontRom={
 	   // 2^11-by-8
@@ -2186,7 +2186,9 @@ module Font_Romv( input logic clk,
 		};
 	
 	always_ff @(posedge clk) begin
-		if (clk) fontRow=fontRom[addr];
+		if (clk) begin
+			fontRow = fontRom[addr];
+		end
 	end
 
 endmodule 
