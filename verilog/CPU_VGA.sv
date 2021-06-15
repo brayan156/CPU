@@ -6,7 +6,6 @@ module CPU_VGA(input logic clk, reset, swxor2,swxor1,swxor0,swxor,swnot,swadd,sw
 	logic wboolean;
 	logic [7:0] char_data[255:0];
 
-
 	logic [31:0] PC, Instr, rdata;
 	
 	clk_mitad_MHz cmh(clk, clk3);
@@ -18,6 +17,5 @@ module CPU_VGA(input logic clk, reset, swxor2,swxor1,swxor0,swxor,swnot,swadd,sw
 	Memory_Management mm(clk3, swxor2, swxor1, swxor0, swxor, swnot, swadd, swinit, wboolean, address, wdata, rdata, char_data);
 		
 	VGA vga(clk3, reset, char_data, R, G, B, hsync, vsync, blank, sync);
-	
 	
 endmodule 
