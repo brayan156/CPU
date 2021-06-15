@@ -1,19 +1,18 @@
 module VGA (input logic clk, reset,
 				input logic[7:0] char_data[255:0],
 				output logic [7:0] R, G, B,
-				output logic hsync, vsync, clk2, blank, sync);
+				output logic hsync, vsync, blank, sync);
 
 	assign sync=1'b0;
 
 	logic pasarlinea, res;
 	logic [9:0] contadorh, contadorv;
 	
-	clk_mitad_MHz cmh(clk, clk2);
 	
 	sincronizadorV sv(pasarlinea, reset, contadorv, vsync);
-   sincronizadorH sh(clk2,reset, contadorh, pasarlinea, hsync); 
+   sincronizadorH sh(clk,reset, contadorh, pasarlinea, hsync); 
 	
-	// asciiwriter w (clk2, contadorh, contadorv, char_data[40:0], R, G, B, blank);
+	// asciiwriter w (clk, contadorh, contadorv, char_data[40:0], R, G, B, blank);
 	
 //	// Test - Hello Jane
 //	logic[7:0] char_data[255:0];
@@ -301,7 +300,7 @@ module VGA (input logic clk, reset,
 
 	
 	Pixels p(char_data,
-				clk2,
+				clk,
             0,
             0,
             contadorh,

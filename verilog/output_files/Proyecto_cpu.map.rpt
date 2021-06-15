@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proyecto_cpu
-Mon Jun 14 19:27:54 2021
+Mon Jun 14 20:22:08 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -92,13 +92,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 14 19:27:53 2021       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 14 20:22:08 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto_cpu                                ;
 ; Top-level Entity Name           ; CPU_VGA                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2436                                        ;
+; Total registers                 ; 2435                                        ;
 ; Total pins                      ; 38                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 16,384                                      ;
@@ -204,90 +204,95 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                              ;
-+------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path               ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                   ; Library ;
-+------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------+---------+
-; VGA/text-module/Pixels.sv                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv                      ;         ;
-; VGA/VGA.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv                                     ;         ;
-; VGA/sincronizadorV.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv                          ;         ;
-; VGA/sincronizadorH.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv                          ;         ;
-; VGA/controlador_color.sv                       ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/controlador_color.sv                       ;         ;
-; VGA/clk_mitad_MHz.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/clk_mitad_MHz.sv                           ;         ;
-; Decoder.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Decoder.sv                                     ;         ;
-; Register_File.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Register_File.sv                               ;         ;
-; Instruction_Memory.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv                          ;         ;
-; Control_Unit.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Control_Unit.sv                                ;         ;
-; Condition_Logic.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Condition_Logic.sv                             ;         ;
-; ALU/sumador_nb.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/sumador_nb.sv                              ;         ;
-; ALU/sumador_1b.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/sumador_1b.sv                              ;         ;
-; ALU/shiftR.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/shiftR.sv                                  ;         ;
-; ALU/shiftL.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/shiftL.sv                                  ;         ;
-; ALU/restador_nb.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/restador_nb.sv                             ;         ;
-; ALU/negador_nb.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/negador_nb.sv                              ;         ;
-; ALU/negador_1b.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/negador_1b.sv                              ;         ;
-; ALU/Mux.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv                                     ;         ;
-; ALU/multiplicador.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/multiplicador.sv                           ;         ;
-; ALU/modulo_nb.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/modulo_nb.sv                               ;         ;
-; ALU/flag_overflow.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_overflow.sv                           ;         ;
-; ALU/flag_negativo.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_negativo.sv                           ;         ;
-; ALU/flag_cero.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_cero.sv                               ;         ;
-; ALU/flag_carry.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_carry.sv                              ;         ;
-; ALU/divisor_nb.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/divisor_nb.sv                              ;         ;
-; ALU/c_xor.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/c_xor.sv                                   ;         ;
-; ALU/c_or.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/c_or.sv                                    ;         ;
-; ALU/c_and.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/c_and.sv                                   ;         ;
-; ALU/ALU.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv                                     ;         ;
-; Memory_Management.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Memory_Management.sv                           ;         ;
-; ROM.txt                                        ; yes             ; User File                                             ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.txt                                        ;         ;
-; ROM.sv                                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.sv                                         ;         ;
-; RAM.sv                                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/RAM.sv                                         ;         ;
-; Mux2_1.sv                                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Mux2_1.sv                                      ;         ;
-; PC.sv                                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/PC.sv                                          ;         ;
-; Extender.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Extender.sv                                    ;         ;
-; ff_enable.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ff_enable.sv                                   ;         ;
-; CPU.sv                                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv                                         ;         ;
-; condition_check.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/condition_check.sv                             ;         ;
-; VGA/text-module/Font_Rom.vhd                   ; yes             ; User VHDL File                                        ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd                   ;         ;
-; VGA/text-module/commonPak.vhd                  ; yes             ; User VHDL File                                        ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd                  ;         ;
-; CPU_VGA.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv                                     ;         ;
-; binfile.txt                                    ; yes             ; User File                                             ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/binfile.txt                                    ;         ;
-; MuxMOV.sv                                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/MuxMOV.sv                                      ;         ;
-; Imm_Rotation.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Imm_Rotation.sv                                ;         ;
-; altsyncram.tdf                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                          ;         ;
-; stratix_ram_block.inc                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                   ;         ;
-; lpm_mux.inc                                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                             ;         ;
-; lpm_decode.inc                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                          ;         ;
-; aglobal201.inc                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                          ;         ;
-; a_rdenreg.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                           ;         ;
-; altrom.inc                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                              ;         ;
-; altram.inc                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                              ;         ;
-; altdpram.inc                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                            ;         ;
-; db/altsyncram_8ud1.tdf                         ; yes             ; Auto-Generated Megafunction                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/altsyncram_8ud1.tdf                         ;         ;
-; db/proyecto_cpu.ram0_font_rom_d6022abf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/proyecto_cpu.ram0_font_rom_d6022abf.hdl.mif ;         ;
-; lpm_divide.tdf                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                          ;         ;
-; abs_divider.inc                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                         ;         ;
-; sign_div_unsign.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                     ;         ;
-; db/lpm_divide_3dm.tdf                          ; yes             ; Auto-Generated Megafunction                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/lpm_divide_3dm.tdf                          ;         ;
-; db/sign_div_unsign_9nh.tdf                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/sign_div_unsign_9nh.tdf                     ;         ;
-; db/alt_u_div_o2f.tdf                           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/alt_u_div_o2f.tdf                           ;         ;
-; db/lpm_divide_65m.tdf                          ; yes             ; Auto-Generated Megafunction                           ; C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/lpm_divide_65m.tdf                          ;         ;
-+------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                        ;
++------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path               ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                             ; Library ;
++------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
+; VGA/text-module/Pixels.sv                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv                      ;         ;
+; VGA/VGA.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv                                     ;         ;
+; VGA/sincronizadorV.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv                          ;         ;
+; VGA/sincronizadorH.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv                          ;         ;
+; VGA/controlador_color.sv                       ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/controlador_color.sv                       ;         ;
+; VGA/clk_mitad_MHz.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/clk_mitad_MHz.sv                           ;         ;
+; Decoder.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Decoder.sv                                     ;         ;
+; Register_File.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv                               ;         ;
+; Instruction_Memory.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv                          ;         ;
+; Control_Unit.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv                                ;         ;
+; Condition_Logic.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv                             ;         ;
+; ALU/sumador_nb.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv                              ;         ;
+; ALU/sumador_1b.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_1b.sv                              ;         ;
+; ALU/shiftR.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftR.sv                                  ;         ;
+; ALU/shiftL.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftL.sv                                  ;         ;
+; ALU/restador_nb.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv                             ;         ;
+; ALU/negador_nb.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv                              ;         ;
+; ALU/negador_1b.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_1b.sv                              ;         ;
+; ALU/Mux.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv                                     ;         ;
+; ALU/multiplicador.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/multiplicador.sv                           ;         ;
+; ALU/modulo_nb.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv                               ;         ;
+; ALU/flag_overflow.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_overflow.sv                           ;         ;
+; ALU/flag_negativo.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_negativo.sv                           ;         ;
+; ALU/flag_cero.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_cero.sv                               ;         ;
+; ALU/flag_carry.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_carry.sv                              ;         ;
+; ALU/divisor_nb.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv                              ;         ;
+; ALU/c_xor.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_xor.sv                                   ;         ;
+; ALU/c_or.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_or.sv                                    ;         ;
+; ALU/c_and.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_and.sv                                   ;         ;
+; ALU/ALU.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv                                     ;         ;
+; Memory_Management.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv                           ;         ;
+; ROM.txt                                        ; yes             ; User File                                             ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.txt                                        ;         ;
+; ROM.sv                                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv                                         ;         ;
+; RAM.sv                                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/RAM.sv                                         ;         ;
+; Mux2_1.sv                                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Mux2_1.sv                                      ;         ;
+; PC.sv                                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/PC.sv                                          ;         ;
+; Extender.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Extender.sv                                    ;         ;
+; ff_enable.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ff_enable.sv                                   ;         ;
+; CPU.sv                                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv                                         ;         ;
+; condition_check.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/condition_check.sv                             ;         ;
+; VGA/text-module/Font_Rom.vhd                   ; yes             ; User VHDL File                                        ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd                   ;         ;
+; VGA/text-module/commonPak.vhd                  ; yes             ; User VHDL File                                        ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/commonPak.vhd                  ;         ;
+; CPU_VGA.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv                                     ;         ;
+; binfile.txt                                    ; yes             ; User File                                             ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/binfile.txt                                    ;         ;
+; MuxMOV.sv                                      ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/MuxMOV.sv                                      ;         ;
+; Imm_Rotation.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Imm_Rotation.sv                                ;         ;
+; altsyncram.tdf                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                    ;         ;
+; stratix_ram_block.inc                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ;
+; lpm_mux.inc                                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ;
+; lpm_decode.inc                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                    ;         ;
+; aglobal201.inc                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                    ;         ;
+; a_rdenreg.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                     ;         ;
+; altrom.inc                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                        ;         ;
+; altram.inc                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                        ;         ;
+; altdpram.inc                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ;
+; db/altsyncram_8ud1.tdf                         ; yes             ; Auto-Generated Megafunction                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/altsyncram_8ud1.tdf                         ;         ;
+; db/proyecto_cpu.ram0_font_rom_d6022abf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/proyecto_cpu.ram0_font_rom_d6022abf.hdl.mif ;         ;
+; lpm_divide.tdf                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                    ;         ;
+; abs_divider.inc                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                                   ;         ;
+; sign_div_unsign.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                               ;         ;
+; db/lpm_divide_3dm.tdf                          ; yes             ; Auto-Generated Megafunction                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/lpm_divide_3dm.tdf                          ;         ;
+; db/sign_div_unsign_9nh.tdf                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/sign_div_unsign_9nh.tdf                     ;         ;
+; db/alt_u_div_o2f.tdf                           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/alt_u_div_o2f.tdf                           ;         ;
+; db/lpm_divide_65m.tdf                          ; yes             ; Auto-Generated Megafunction                           ; C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/lpm_divide_65m.tdf                          ;         ;
++------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------+
@@ -295,16 +300,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 4806                   ;
+; Estimate of Logic utilization (ALMs needed) ; 4809                   ;
 ;                                             ;                        ;
-; Combinational ALUT usage for logic          ; 6456                   ;
-;     -- 7 input functions                    ; 11                     ;
-;     -- 6 input functions                    ; 3112                   ;
-;     -- 5 input functions                    ; 1615                   ;
-;     -- 4 input functions                    ; 1158                   ;
-;     -- <=3 input functions                  ; 560                    ;
+; Combinational ALUT usage for logic          ; 6465                   ;
+;     -- 7 input functions                    ; 10                     ;
+;     -- 6 input functions                    ; 3110                   ;
+;     -- 5 input functions                    ; 1619                   ;
+;     -- 4 input functions                    ; 1164                   ;
+;     -- <=3 input functions                  ; 562                    ;
 ;                                             ;                        ;
-; Dedicated logic registers                   ; 2436                   ;
+; Dedicated logic registers                   ; 2435                   ;
 ;                                             ;                        ;
 ; I/O pins                                    ; 38                     ;
 ; Total MLAB memory bits                      ; 0                      ;
@@ -313,8 +318,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 2                      ;
 ;                                             ;                        ;
 ; Maximum fan-out node                        ; clk_mitad_MHz:cmh|clk2 ;
-; Maximum fan-out                             ; 2409                   ;
-; Total fan-out                               ; 39340                  ;
+; Maximum fan-out                             ; 2431                   ;
+; Total fan-out                               ; 39370                  ;
 ; Average fan-out                             ; 4.38                   ;
 +---------------------------------------------+------------------------+
 
@@ -324,10 +329,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |CPU_VGA                                        ; 6456 (1)            ; 2436 (0)                  ; 16384             ; 2          ; 38   ; 0            ; |CPU_VGA                                                                                                                                ; CPU_VGA             ; work         ;
-;    |CPU:arm|                                    ; 3177 (0)            ; 353 (0)                   ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:arm                                                                                                                        ; CPU                 ; work         ;
-;       |ALU:uut|                                 ; 2611 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut                                                                                                                ; ALU                 ; work         ;
-;          |Mux:m|                                ; 175 (175)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|Mux:m                                                                                                          ; Mux                 ; work         ;
+; |CPU_VGA                                        ; 6465 (1)            ; 2435 (0)                  ; 16384             ; 2          ; 38   ; 0            ; |CPU_VGA                                                                                                                                ; CPU_VGA             ; work         ;
+;    |CPU:arm|                                    ; 3178 (0)            ; 353 (0)                   ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:arm                                                                                                                        ; CPU                 ; work         ;
+;       |ALU:uut|                                 ; 2612 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut                                                                                                                ; ALU                 ; work         ;
+;          |Mux:m|                                ; 176 (176)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|Mux:m                                                                                                          ; Mux                 ; work         ;
 ;          |divisor_nb:div|                       ; 1132 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|divisor_nb:div                                                                                                 ; divisor_nb          ; work         ;
 ;             |lpm_divide:Div0|                   ; 1132 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|divisor_nb:div|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;                |lpm_divide_3dm:auto_generated|  ; 1132 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|divisor_nb:div|lpm_divide:Div0|lpm_divide_3dm:auto_generated                                                   ; lpm_divide_3dm      ; work         ;
@@ -406,14 +411,14 @@ https://fpgasoftware.intel.com/eula.
 ;             |sumador_1b:gen_loop[8].sum1b3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|sumador_nb:sum|sumador_1b:gen_loop[8].sum1b3                                                                   ; sumador_1b          ; work         ;
 ;             |sumador_1b:gen_loop[9].sum1b3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|sumador_nb:sum|sumador_1b:gen_loop[9].sum1b3                                                                   ; sumador_1b          ; work         ;
 ;             |sumador_1b:sum1b14|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|ALU:uut|sumador_nb:sum|sumador_1b:sum1b14                                                                              ; sumador_1b          ; work         ;
-;       |Control_Unit:c|                          ; 20 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c                                                                                                         ; Control_Unit        ; work         ;
-;          |Condition_Logic:cl|                   ; 8 (3)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c|Condition_Logic:cl                                                                                      ; Condition_Logic     ; work         ;
-;             |ff_enable:flagreg1|                ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1                                                                   ; ff_enable           ; work         ;
+;       |Control_Unit:c|                          ; 19 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c                                                                                                         ; Control_Unit        ; work         ;
+;          |Condition_Logic:cl|                   ; 7 (3)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c|Condition_Logic:cl                                                                                      ; Condition_Logic     ; work         ;
+;             |ff_enable:flagreg1|                ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1                                                                   ; ff_enable           ; work         ;
 ;          |Decoder:dec|                          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Control_Unit:c|Decoder:dec                                                                                             ; Decoder             ; work         ;
 ;       |Extender:ext|                            ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Extender:ext                                                                                                           ; Extender            ; work         ;
 ;       |Imm_Rotation:ir|                         ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Imm_Rotation:ir                                                                                                        ; Imm_Rotation        ; work         ;
 ;       |Mux2_1:Bmux|                             ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Mux2_1:Bmux                                                                                                            ; Mux2_1              ; work         ;
-;       |Mux2_1:resmux|                           ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Mux2_1:resmux                                                                                                          ; Mux2_1              ; work         ;
+;       |Mux2_1:resmux|                           ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Mux2_1:resmux                                                                                                          ; Mux2_1              ; work         ;
 ;       |Mux2_1:rselector1mux|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Mux2_1:rselector1mux                                                                                                   ; Mux2_1              ; work         ;
 ;       |Mux2_1:rselector2mux|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|Mux2_1:rselector2mux                                                                                                   ; Mux2_1              ; work         ;
 ;       |MuxMOV:movmox|                           ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|MuxMOV:movmox                                                                                                          ; MuxMOV              ; work         ;
@@ -479,19 +484,18 @@ https://fpgasoftware.intel.com/eula.
 ;          |sumador_1b:gen_loop[9].sum1b3|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|sumador_nb:sump8|sumador_1b:gen_loop[9].sum1b3                                                                         ; sumador_1b          ; work         ;
 ;          |sumador_1b:sum1b14|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:arm|sumador_nb:sump8|sumador_1b:sum1b14                                                                                    ; sumador_1b          ; work         ;
 ;    |Instruction_Memory:im|                      ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Instruction_Memory:im                                                                                                          ; Instruction_Memory  ; work         ;
-;    |Memory_Management:mm|                       ; 2884 (48)           ; 2056 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm                                                                                                           ; Memory_Management   ; work         ;
-;       |RAM:ram|                                 ; 2802 (2802)         ; 2056 (2056)               ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|RAM:ram                                                                                                   ; RAM                 ; work         ;
-;       |ROM:rom|                                 ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|ROM:rom                                                                                                   ; ROM                 ; work         ;
-;    |VGA:vga|                                    ; 357 (0)             ; 26 (0)                    ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga                                                                                                                        ; VGA                 ; work         ;
+;    |Memory_Management:mm|                       ; 2892 (48)           ; 2056 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm                                                                                                           ; Memory_Management   ; work         ;
+;       |RAM:ram|                                 ; 2804 (2804)         ; 2056 (2056)               ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|RAM:ram                                                                                                   ; RAM                 ; work         ;
+;       |ROM:rom|                                 ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|ROM:rom                                                                                                   ; ROM                 ; work         ;
+;    |VGA:vga|                                    ; 356 (0)             ; 24 (0)                    ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga                                                                                                                        ; VGA                 ; work         ;
 ;       |Pixels:p|                                ; 325 (325)           ; 1 (1)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p                                                                                                               ; Pixels              ; work         ;
 ;          |Font_Rom:rom|                         ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p|Font_Rom:rom                                                                                                  ; Font_Rom            ; work         ;
 ;             |altsyncram:ROM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p|Font_Rom:rom|altsyncram:ROM_rtl_0                                                                             ; altsyncram          ; work         ;
 ;                |altsyncram_8ud1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p|Font_Rom:rom|altsyncram:ROM_rtl_0|altsyncram_8ud1:auto_generated                                              ; altsyncram_8ud1     ; work         ;
-;       |clk_mitad_MHz:cmh|                       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|clk_mitad_MHz:cmh                                                                                                      ; clk_mitad_MHz       ; work         ;
 ;       |controlador_color:cc|                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|controlador_color:cc                                                                                                   ; controlador_color   ; work         ;
 ;       |sincronizadorH:sh|                       ; 14 (14)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|sincronizadorH:sh                                                                                                      ; sincronizadorH      ; work         ;
 ;       |sincronizadorV:sv|                       ; 15 (15)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|sincronizadorV:sv                                                                                                      ; sincronizadorV      ; work         ;
-;    |clk_mitad_MHz:cmh|                          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|clk_mitad_MHz:cmh                                                                                                              ; clk_mitad_MHz       ; work         ;
+;    |clk_mitad_MHz:cmh|                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|clk_mitad_MHz:cmh                                                                                                              ; clk_mitad_MHz       ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2571,12 +2575,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Memory_Management:mm|RAM:ram|RAM[255][4]                          ; Merged with Memory_Management:mm|RAM:ram|chardata[255][4] ;
 ; Memory_Management:mm|RAM:ram|RAM[255][5]                          ; Merged with Memory_Management:mm|RAM:ram|chardata[255][5] ;
 ; Memory_Management:mm|RAM:ram|RAM[255][6]                          ; Merged with Memory_Management:mm|RAM:ram|chardata[255][6] ;
-; clk_mitad_MHz:cmh|tiempo[0]                                       ; Merged with VGA:vga|clk_mitad_MHz:cmh|tiempo[0]           ;
-; clk_mitad_MHz:cmh|tiempo[1]                                       ; Merged with VGA:vga|clk_mitad_MHz:cmh|tiempo[1]           ;
 ; CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg0|q[1] ; Lost fanout                                               ;
 ; CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1|q[1] ; Lost fanout                                               ;
 ; CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg0|q[0] ; Lost fanout                                               ;
-; VGA:vga|clk_mitad_MHz:cmh|tiempo[1]                               ; Stuck at GND due to stuck port data_in                    ;
+; clk_mitad_MHz:cmh|tiempo[1]                                       ; Stuck at GND due to stuck port data_in                    ;
 ; CPU:arm|Register_File:rf|register~320                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:arm|Register_File:rf|register~352                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:arm|Register_File:rf|register~416                             ; Stuck at GND due to stuck port clock_enable               ;
@@ -2737,7 +2739,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:arm|Register_File:rf|register~341                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:arm|Register_File:rf|register~469                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:arm|Register_File:rf|register~373                             ; Stuck at GND due to stuck port clock_enable               ;
-; Total Number of Removed Registers = 2214                          ;                                                           ;
+; Total Number of Removed Registers = 2212                          ;                                                           ;
 +-------------------------------------------------------------------+-----------------------------------------------------------+
 
 
@@ -2751,34 +2753,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~359, CPU:arm|Register_File:rf|register~324, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~356, CPU:arm|Register_File:rf|register~420, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~388, CPU:arm|Register_File:rf|register~452, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~328, CPU:arm|Register_File:rf|register~360, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~424, CPU:arm|Register_File:rf|register~392, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~456, CPU:arm|Register_File:rf|register~344, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~376, CPU:arm|Register_File:rf|register~440, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~408, CPU:arm|Register_File:rf|register~472, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~409, CPU:arm|Register_File:rf|register~441, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~345, CPU:arm|Register_File:rf|register~473, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~377, CPU:arm|Register_File:rf|register~346, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~378, CPU:arm|Register_File:rf|register~442, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~410, CPU:arm|Register_File:rf|register~474, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~411, CPU:arm|Register_File:rf|register~443, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~347, CPU:arm|Register_File:rf|register~475, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~379, CPU:arm|Register_File:rf|register~348, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~380, CPU:arm|Register_File:rf|register~444, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~412, CPU:arm|Register_File:rf|register~476, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~344, CPU:arm|Register_File:rf|register~376, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~440, CPU:arm|Register_File:rf|register~408, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~472, CPU:arm|Register_File:rf|register~409, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~441, CPU:arm|Register_File:rf|register~345, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~473, CPU:arm|Register_File:rf|register~377, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~346, CPU:arm|Register_File:rf|register~378, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~442, CPU:arm|Register_File:rf|register~410, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~474, CPU:arm|Register_File:rf|register~411, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~443, CPU:arm|Register_File:rf|register~347, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~475, CPU:arm|Register_File:rf|register~379, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~413, CPU:arm|Register_File:rf|register~445, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~349, CPU:arm|Register_File:rf|register~477, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~381, CPU:arm|Register_File:rf|register~407, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~381, CPU:arm|Register_File:rf|register~415, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~447, CPU:arm|Register_File:rf|register~351, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~479, CPU:arm|Register_File:rf|register~383, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~350, CPU:arm|Register_File:rf|register~382, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~446, CPU:arm|Register_File:rf|register~414, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~478, CPU:arm|Register_File:rf|register~407, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~439, CPU:arm|Register_File:rf|register~343, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~471, CPU:arm|Register_File:rf|register~375, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~342, CPU:arm|Register_File:rf|register~374, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~438, CPU:arm|Register_File:rf|register~406, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~470, CPU:arm|Register_File:rf|register~339, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~371, CPU:arm|Register_File:rf|register~403, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~435, CPU:arm|Register_File:rf|register~467, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~340, CPU:arm|Register_File:rf|register~372, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~436, CPU:arm|Register_File:rf|register~404, ;
-;                                               ;                                ; CPU:arm|Register_File:rf|register~468, CPU:arm|Register_File:rf|register~333, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~339, CPU:arm|Register_File:rf|register~371, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~403, CPU:arm|Register_File:rf|register~435, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~467, CPU:arm|Register_File:rf|register~340, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~372, CPU:arm|Register_File:rf|register~436, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~404, CPU:arm|Register_File:rf|register~468, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~398, CPU:arm|Register_File:rf|register~430, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~334, CPU:arm|Register_File:rf|register~462, ;
+;                                               ;                                ; CPU:arm|Register_File:rf|register~366, CPU:arm|Register_File:rf|register~333, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~365, CPU:arm|Register_File:rf|register~397, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~429, CPU:arm|Register_File:rf|register~461, ;
 ;                                               ;                                ; CPU:arm|Register_File:rf|register~396, CPU:arm|Register_File:rf|register~428, ;
@@ -2814,7 +2816,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2436  ;
+; Total registers                              ; 2435  ;
 ; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 55    ;
@@ -3388,30 +3390,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2436                        ;
+; arriav_ff             ; 2435                        ;
 ;     CLR               ; 3                           ;
 ;     CLR SCLR          ; 20                          ;
 ;     CLR SLD           ; 30                          ;
 ;     ENA               ; 321                         ;
 ;     ENA CLR           ; 2                           ;
-;     plain             ; 2060                        ;
-; arriav_lcell_comb     ; 6460                        ;
+;     plain             ; 2059                        ;
+; arriav_lcell_comb     ; 6469                        ;
 ;     arith             ; 1244                        ;
 ;         0 data inputs ; 120                         ;
 ;         1 data inputs ; 29                          ;
 ;         2 data inputs ; 22                          ;
 ;         4 data inputs ; 23                          ;
 ;         5 data inputs ; 1050                        ;
-;     extend            ; 11                          ;
-;         7 data inputs ; 11                          ;
-;     normal            ; 5195                        ;
+;     extend            ; 10                          ;
+;         7 data inputs ; 10                          ;
+;     normal            ; 5205                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 116                         ;
-;         3 data inputs ; 261                         ;
-;         4 data inputs ; 1135                        ;
-;         5 data inputs ; 565                         ;
-;         6 data inputs ; 3112                        ;
+;         2 data inputs ; 115                         ;
+;         3 data inputs ; 264                         ;
+;         4 data inputs ; 1141                        ;
+;         5 data inputs ; 569                         ;
+;         6 data inputs ; 3110                        ;
 ;     shared            ; 10                          ;
 ;         0 data inputs ; 4                           ;
 ;         3 data inputs ; 6                           ;
@@ -3420,7 +3422,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 111.40                      ;
-; Average LUT depth     ; 78.32                       ;
+; Average LUT depth     ; 78.35                       ;
 +-----------------------+-----------------------------+
 
 
@@ -3429,7 +3431,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:59     ;
+; Top            ; 00:00:24     ;
 +----------------+--------------+
 
 
@@ -3439,221 +3441,219 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 14 19:26:30 2021
+    Info: Processing started: Mon Jun 14 20:21:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto_cpu -c Proyecto_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga/text-module/font_romv.sv
-    Info (12023): Found entity 1: Font_Romv File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Romv.sv Line: 1
+    Info (12023): Found entity 1: Font_Romv File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Romv.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga/text-module/pixels.sv
-    Info (12023): Found entity 1: Pixels File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv Line: 1
+    Info (12023): Found entity 1: Pixels File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga/vga.sv
-    Info (12023): Found entity 1: VGA File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv Line: 1
+    Info (12023): Found entity 1: VGA File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga/sincronizadorv.sv
-    Info (12023): Found entity 1: sincronizadorV File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv Line: 1
+    Info (12023): Found entity 1: sincronizadorV File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga/sincronizadorh.sv
-    Info (12023): Found entity 1: sincronizadorH File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv Line: 1
+    Info (12023): Found entity 1: sincronizadorH File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga/controlador_color.sv
-    Info (12023): Found entity 1: controlador_color File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/controlador_color.sv Line: 1
+    Info (12023): Found entity 1: controlador_color File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/controlador_color.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga/clk_mitad_mhz.sv
-    Info (12023): Found entity 1: clk_mitad_MHz File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/clk_mitad_MHz.sv Line: 1
+    Info (12023): Found entity 1: clk_mitad_MHz File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/clk_mitad_MHz.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: Decoder File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Decoder.sv Line: 1
+    Info (12023): Found entity 1: Decoder File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
-    Info (12023): Found entity 1: Register_File File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Register_File.sv Line: 1
+    Info (12023): Found entity 1: Register_File File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
-    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv Line: 1
+    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: Control_Unit File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Control_Unit.sv Line: 1
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condition_logic.sv
-    Info (12023): Found entity 1: Condition_Logic File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Condition_Logic.sv Line: 1
+    Info (12023): Found entity 1: Condition_Logic File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sumador_nb.sv
-    Info (12023): Found entity 1: sumador_nb File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/sumador_nb.sv Line: 1
+    Info (12023): Found entity 1: sumador_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sumador_1b.sv
-    Info (12023): Found entity 1: sumador_1b File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/sumador_1b.sv Line: 1
+    Info (12023): Found entity 1: sumador_1b File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_1b.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftr.sv
-    Info (12023): Found entity 1: shiftR File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/shiftR.sv Line: 1
+    Info (12023): Found entity 1: shiftR File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftl.sv
-    Info (12023): Found entity 1: shiftL File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/shiftL.sv Line: 1
+    Info (12023): Found entity 1: shiftL File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftL.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/restador_nb_test.sv
-    Info (12023): Found entity 1: restador_nb_test File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/restador_nb_test.sv Line: 1
+    Info (12023): Found entity 1: restador_nb_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/restador_nb.sv
-    Info (12023): Found entity 1: restador_nb File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/restador_nb.sv Line: 1
+    Info (12023): Found entity 1: restador_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/negador_nb.sv
-    Info (12023): Found entity 1: negador_nb File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/negador_nb.sv Line: 1
+    Info (12023): Found entity 1: negador_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/negador_1b.sv
-    Info (12023): Found entity 1: negador_1b File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/negador_1b.sv Line: 1
-Warning (12090): Entity "Mux" obtained from "ALU/Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 1
+    Info (12023): Found entity 1: negador_1b File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_1b.sv Line: 1
+Warning (12090): Entity "Mux" obtained from "ALU/Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux.sv
-    Info (12023): Found entity 1: Mux File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 1
+    Info (12023): Found entity 1: Mux File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/multiplicador.sv
-    Info (12023): Found entity 1: multiplicador File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/multiplicador.sv Line: 1
+    Info (12023): Found entity 1: multiplicador File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/multiplicador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/modulo_nb.sv
-    Info (12023): Found entity 1: modulo_nb File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/modulo_nb.sv Line: 1
+    Info (12023): Found entity 1: modulo_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_overflow.sv
-    Info (12023): Found entity 1: flag_overflow File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_overflow.sv Line: 1
+    Info (12023): Found entity 1: flag_overflow File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_overflow.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_negativo.sv
-    Info (12023): Found entity 1: flag_negativo File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_negativo.sv Line: 1
+    Info (12023): Found entity 1: flag_negativo File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_negativo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_cero.sv
-    Info (12023): Found entity 1: flag_cero File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_cero.sv Line: 1
+    Info (12023): Found entity 1: flag_cero File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_cero.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_carry.sv
-    Info (12023): Found entity 1: flag_carry File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/flag_carry.sv Line: 1
+    Info (12023): Found entity 1: flag_carry File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_carry.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/divisor_nb.sv
-    Info (12023): Found entity 1: divisor_nb File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/divisor_nb.sv Line: 1
+    Info (12023): Found entity 1: divisor_nb File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/decoc_1b_display_bin.sv
-    Info (12023): Found entity 1: decoc_1b_display_bin File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/decoc_1b_display_bin.sv Line: 1
+    Info (12023): Found entity 1: decoc_1b_display_bin File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/decoc_1b_display_bin.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/c_xor.sv
-    Info (12023): Found entity 1: c_xor File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/c_xor.sv Line: 1
+    Info (12023): Found entity 1: c_xor File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_xor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/c_or.sv
-    Info (12023): Found entity 1: c_or File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/c_or.sv Line: 1
+    Info (12023): Found entity 1: c_or File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_or.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/c_and.sv
-    Info (12023): Found entity 1: c_and File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/c_and.sv Line: 1
+    Info (12023): Found entity 1: c_and File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_and.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_test.sv
-    Info (12023): Found entity 1: ALU_test File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU_test.sv Line: 1
+    Info (12023): Found entity 1: ALU_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_4b_display.sv
-    Info (12023): Found entity 1: Alu_4b_display File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Alu_4b_display.sv Line: 1
+    Info (12023): Found entity 1: Alu_4b_display File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Alu_4b_display.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memory_management.sv
-    Info (12023): Found entity 1: Memory_Management File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Memory_Management.sv Line: 1
+    Info (12023): Found entity 1: Memory_Management File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
-    Info (12023): Found entity 1: ROM File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.sv Line: 1
+    Info (12023): Found entity 1: ROM File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ram.sv
-    Info (12023): Found entity 1: RAM File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/RAM.sv Line: 1
+    Info (12023): Found entity 1: RAM File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/RAM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.sv
-    Info (12023): Found entity 1: Mux2_1 File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Mux2_1.sv Line: 1
+    Info (12023): Found entity 1: Mux2_1 File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Mux2_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
-    Info (12023): Found entity 1: PC File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/PC.sv Line: 1
+    Info (12023): Found entity 1: PC File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/PC.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extender.sv
-    Info (12023): Found entity 1: Extender File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Extender.sv Line: 1
+    Info (12023): Found entity 1: Extender File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Extender.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file test/memory_management_test.sv
-    Info (12023): Found entity 1: Memory_Management_test File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/test/Memory_Management_test.sv Line: 1
+    Info (12023): Found entity 1: Memory_Management_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/test/Memory_Management_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file test/extender_test.sv
-    Info (12023): Found entity 1: Extender_test File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/test/Extender_test.sv Line: 1
+    Info (12023): Found entity 1: Extender_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/test/Extender_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_enable.sv
-    Info (12023): Found entity 1: ff_enable File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ff_enable.sv Line: 1
+    Info (12023): Found entity 1: ff_enable File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ff_enable.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 1
+    Info (12023): Found entity 1: CPU File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condition_check.sv
-    Info (12023): Found entity 1: condition_check File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/condition_check.sv Line: 1
+    Info (12023): Found entity 1: condition_check File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/condition_check.sv Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/wrapper.vhd
-    Info (12022): Found design unit 1: wrapper-Behavioral File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/wrapper.vhd Line: 33
-    Info (12023): Found entity 1: wrapper File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/wrapper.vhd Line: 24
+    Info (12022): Found design unit 1: wrapper-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/wrapper.vhd Line: 33
+    Info (12023): Found entity 1: wrapper File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/wrapper.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/pixel_on_text2.vhd
-    Info (12022): Found design unit 1: Pixel_On_Text2-Behavioral File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixel_On_Text2.vhd Line: 46
-    Info (12023): Found entity 1: Pixel_On_Text2 File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixel_On_Text2.vhd Line: 30
+    Info (12022): Found design unit 1: Pixel_On_Text2-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixel_On_Text2.vhd Line: 46
+    Info (12023): Found entity 1: Pixel_On_Text2 File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixel_On_Text2.vhd Line: 30
 Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/pixel_on_text.vhd
-    Info (12022): Found design unit 1: Pixel_On_Text-Behavioral File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixel_On_Text.vhd Line: 49
-    Info (12023): Found entity 1: Pixel_On_Text File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixel_On_Text.vhd Line: 30
+    Info (12022): Found design unit 1: Pixel_On_Text-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixel_On_Text.vhd Line: 49
+    Info (12023): Found entity 1: Pixel_On_Text File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixel_On_Text.vhd Line: 30
 Info (12021): Found 2 design units, including 1 entities, in source file vga/text-module/font_rom.vhd
-    Info (12022): Found design unit 1: Font_Rom-Behavioral File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd Line: 40
-    Info (12023): Found entity 1: Font_Rom File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd Line: 32
+    Info (12022): Found design unit 1: Font_Rom-Behavioral File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd Line: 40
+    Info (12023): Found entity 1: Font_Rom File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd Line: 32
 Info (12021): Found 2 design units, including 0 entities, in source file vga/text-module/commonpak.vhd
-    Info (12022): Found design unit 1: commonPak File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd Line: 16
-    Info (12022): Found design unit 2: commonPak-body File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd Line: 80
+    Info (12022): Found design unit 1: commonPak File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/commonPak.vhd Line: 16
+    Info (12022): Found design unit 2: commonPak-body File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/commonPak.vhd Line: 80
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_vga.sv
-    Info (12023): Found entity 1: CPU_VGA File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 1
+    Info (12023): Found entity 1: CPU_VGA File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxmov.sv
-    Info (12023): Found entity 1: MuxMOV File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/MuxMOV.sv Line: 1
+    Info (12023): Found entity 1: MuxMOV File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/MuxMOV.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imm_rotation.sv
-    Info (12023): Found entity 1: Imm_Rotation File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Imm_Rotation.sv Line: 1
+    Info (12023): Found entity 1: Imm_Rotation File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Imm_Rotation.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file test/cpu_vga_test.sv
-    Info (12023): Found entity 1: CPU_VGA_test File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/test/CPU_VGA_test.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file asciiwriter.sv
-    Info (12023): Found entity 1: asciiwriter File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/asciiwriter.sv Line: 1
+    Info (12023): Found entity 1: CPU_VGA_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/test/CPU_VGA_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_rom_test.sv
-    Info (12023): Found entity 1: VGA_ROM_Test File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA_ROM_Test.sv Line: 1
+    Info (12023): Found entity 1: VGA_ROM_Test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA_ROM_Test.sv Line: 1
 Info (12127): Elaborating entity "CPU_VGA" for the top level hierarchy
-Info (12128): Elaborating entity "clk_mitad_MHz" for hierarchy "clk_mitad_MHz:cmh" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 12
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:arm" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 15
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:arm|Control_Unit:c" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 17
-Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:arm|Control_Unit:c|Decoder:dec" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Control_Unit.sv Line: 14
-Info (12128): Elaborating entity "Condition_Logic" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Control_Unit.sv Line: 15
-Info (12128): Elaborating entity "ff_enable" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Condition_Logic.sv Line: 14
-Info (12128): Elaborating entity "condition_check" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl|condition_check:cc" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Condition_Logic.sv Line: 19
-Info (12128): Elaborating entity "Mux2_1" for hierarchy "CPU:arm|Mux2_1:pcmux" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 22
-Info (12128): Elaborating entity "PC" for hierarchy "CPU:arm|PC:pc" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 23
-Info (12128): Elaborating entity "sumador_nb" for hierarchy "CPU:arm|sumador_nb:sump4" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 26
-Info (12128): Elaborating entity "sumador_1b" for hierarchy "CPU:arm|sumador_nb:sump4|sumador_1b:sum1b2" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/sumador_nb.sv Line: 15
-Info (12128): Elaborating entity "Mux2_1" for hierarchy "CPU:arm|Mux2_1:rselector1mux" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 31
-Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:arm|Register_File:rf" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 33
-Info (12128): Elaborating entity "MuxMOV" for hierarchy "CPU:arm|MuxMOV:movmox" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 34
-Info (12128): Elaborating entity "Extender" for hierarchy "CPU:arm|Extender:ext" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 36
-Info (12128): Elaborating entity "Imm_Rotation" for hierarchy "CPU:arm|Imm_Rotation:ir" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 37
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:arm|ALU:uut" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU.sv Line: 41
-Info (12128): Elaborating entity "restador_nb" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 14
-Info (12128): Elaborating entity "negador_nb" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/restador_nb.sv Line: 8
-Info (12128): Elaborating entity "negador_1b" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg|negador_1b:gen_loop[0].uut" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/negador_nb.sv Line: 8
-Info (12128): Elaborating entity "multiplicador" for hierarchy "CPU:arm|ALU:uut|multiplicador:mult" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 15
-Info (12128): Elaborating entity "divisor_nb" for hierarchy "CPU:arm|ALU:uut|divisor_nb:div" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 16
-Info (12128): Elaborating entity "modulo_nb" for hierarchy "CPU:arm|ALU:uut|modulo_nb:mod" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 17
-Info (12128): Elaborating entity "c_and" for hierarchy "CPU:arm|ALU:uut|c_and:cand" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 19
-Info (12128): Elaborating entity "c_or" for hierarchy "CPU:arm|ALU:uut|c_or:cor" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 20
-Info (12128): Elaborating entity "c_xor" for hierarchy "CPU:arm|ALU:uut|c_xor:cxor" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 21
-Info (12128): Elaborating entity "shiftL" for hierarchy "CPU:arm|ALU:uut|shiftL:Lshift" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 23
-Info (12128): Elaborating entity "shiftR" for hierarchy "CPU:arm|ALU:uut|shiftR:Rshift" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 24
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:arm|ALU:uut|Mux:m" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 28
-Info (12128): Elaborating entity "flag_negativo" for hierarchy "CPU:arm|ALU:uut|flag_negativo:fn" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 31
-Info (12128): Elaborating entity "flag_carry" for hierarchy "CPU:arm|ALU:uut|flag_carry:fC" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 32
-Info (12128): Elaborating entity "flag_cero" for hierarchy "CPU:arm|ALU:uut|flag_cero:fz" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 33
-Info (12128): Elaborating entity "flag_overflow" for hierarchy "CPU:arm|ALU:uut|flag_overflow:fv" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/ALU.sv Line: 34
-Info (12128): Elaborating entity "Instruction_Memory" for hierarchy "Instruction_Memory:im" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 16
-Warning (10850): Verilog HDL warning at Instruction_Memory.sv(7): number of words (60) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv Line: 7
-Warning (10030): Net "Instructiondata.data_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv Line: 3
-Warning (10030): Net "Instructiondata.waddr_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv Line: 3
-Warning (10030): Net "Instructiondata.we_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv Line: 3
-Info (12128): Elaborating entity "Memory_Management" for hierarchy "Memory_Management:mm" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 18
-Info (12128): Elaborating entity "RAM" for hierarchy "Memory_Management:mm|RAM:ram" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Memory_Management.sv Line: 9
-Info (12128): Elaborating entity "ROM" for hierarchy "Memory_Management:mm|ROM:rom" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Memory_Management.sv Line: 10
-Warning (10030): Net "ROM.data_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.sv Line: 4
-Warning (10030): Net "ROM.waddr_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.sv Line: 4
-Warning (10030): Net "ROM.we_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.sv Line: 4
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vga" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 20
-Info (12128): Elaborating entity "sincronizadorV" for hierarchy "VGA:vga|sincronizadorV:sv" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv Line: 13
-Warning (10036): Verilog HDL or VHDL warning at sincronizadorV.sv(8): object "sincpulsos" assigned a value but never read File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv Line: 8
-Info (12128): Elaborating entity "sincronizadorH" for hierarchy "VGA:vga|sincronizadorH:sh" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv Line: 14
-Warning (10036): Verilog HDL or VHDL warning at sincronizadorH.sv(8): object "sincpulsos" assigned a value but never read File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv Line: 8
-Info (12128): Elaborating entity "Pixels" for hierarchy "VGA:vga|Pixels:p" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv Line: 309
-Info (12128): Elaborating entity "Font_Rom" for hierarchy "VGA:vga|Pixels:p|Font_Rom:rom" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv Line: 27
-Info (12128): Elaborating entity "controlador_color" for hierarchy "VGA:vga|controlador_color:cc" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv Line: 311
+Info (12128): Elaborating entity "clk_mitad_MHz" for hierarchy "clk_mitad_MHz:cmh" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 12
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:arm" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 15
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:arm|Control_Unit:c" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 17
+Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:arm|Control_Unit:c|Decoder:dec" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv Line: 14
+Info (12128): Elaborating entity "Condition_Logic" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv Line: 15
+Info (12128): Elaborating entity "ff_enable" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv Line: 14
+Info (12128): Elaborating entity "condition_check" for hierarchy "CPU:arm|Control_Unit:c|Condition_Logic:cl|condition_check:cc" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv Line: 19
+Info (12128): Elaborating entity "Mux2_1" for hierarchy "CPU:arm|Mux2_1:pcmux" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 22
+Info (12128): Elaborating entity "PC" for hierarchy "CPU:arm|PC:pc" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 23
+Info (12128): Elaborating entity "sumador_nb" for hierarchy "CPU:arm|sumador_nb:sump4" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 26
+Info (12128): Elaborating entity "sumador_1b" for hierarchy "CPU:arm|sumador_nb:sump4|sumador_1b:sum1b2" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv Line: 15
+Info (12128): Elaborating entity "Mux2_1" for hierarchy "CPU:arm|Mux2_1:rselector1mux" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 31
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:arm|Register_File:rf" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 33
+Info (12128): Elaborating entity "MuxMOV" for hierarchy "CPU:arm|MuxMOV:movmox" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 34
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:arm|Extender:ext" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 36
+Info (12128): Elaborating entity "Imm_Rotation" for hierarchy "CPU:arm|Imm_Rotation:ir" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 37
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:arm|ALU:uut" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv Line: 41
+Info (12128): Elaborating entity "restador_nb" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 14
+Info (12128): Elaborating entity "negador_nb" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv Line: 8
+Info (12128): Elaborating entity "negador_1b" for hierarchy "CPU:arm|ALU:uut|restador_nb:rest|negador_nb:neg|negador_1b:gen_loop[0].uut" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv Line: 8
+Info (12128): Elaborating entity "multiplicador" for hierarchy "CPU:arm|ALU:uut|multiplicador:mult" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 15
+Info (12128): Elaborating entity "divisor_nb" for hierarchy "CPU:arm|ALU:uut|divisor_nb:div" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 16
+Info (12128): Elaborating entity "modulo_nb" for hierarchy "CPU:arm|ALU:uut|modulo_nb:mod" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 17
+Info (12128): Elaborating entity "c_and" for hierarchy "CPU:arm|ALU:uut|c_and:cand" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 19
+Info (12128): Elaborating entity "c_or" for hierarchy "CPU:arm|ALU:uut|c_or:cor" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 20
+Info (12128): Elaborating entity "c_xor" for hierarchy "CPU:arm|ALU:uut|c_xor:cxor" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 21
+Info (12128): Elaborating entity "shiftL" for hierarchy "CPU:arm|ALU:uut|shiftL:Lshift" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 23
+Info (12128): Elaborating entity "shiftR" for hierarchy "CPU:arm|ALU:uut|shiftR:Rshift" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 24
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:arm|ALU:uut|Mux:m" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 28
+Info (12128): Elaborating entity "flag_negativo" for hierarchy "CPU:arm|ALU:uut|flag_negativo:fn" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 31
+Info (12128): Elaborating entity "flag_carry" for hierarchy "CPU:arm|ALU:uut|flag_carry:fC" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 32
+Info (12128): Elaborating entity "flag_cero" for hierarchy "CPU:arm|ALU:uut|flag_cero:fz" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 33
+Info (12128): Elaborating entity "flag_overflow" for hierarchy "CPU:arm|ALU:uut|flag_overflow:fv" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv Line: 34
+Info (12128): Elaborating entity "Instruction_Memory" for hierarchy "Instruction_Memory:im" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 16
+Warning (10850): Verilog HDL warning at Instruction_Memory.sv(7): number of words (60) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv Line: 7
+Warning (10030): Net "Instructiondata.data_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv Line: 3
+Warning (10030): Net "Instructiondata.waddr_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv Line: 3
+Warning (10030): Net "Instructiondata.we_a" at Instruction_Memory.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv Line: 3
+Info (12128): Elaborating entity "Memory_Management" for hierarchy "Memory_Management:mm" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 18
+Info (12128): Elaborating entity "RAM" for hierarchy "Memory_Management:mm|RAM:ram" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv Line: 9
+Info (12128): Elaborating entity "ROM" for hierarchy "Memory_Management:mm|ROM:rom" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv Line: 10
+Warning (10030): Net "ROM.data_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv Line: 4
+Warning (10030): Net "ROM.waddr_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv Line: 4
+Warning (10030): Net "ROM.we_a" at ROM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv Line: 4
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vga" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 20
+Info (12128): Elaborating entity "sincronizadorV" for hierarchy "VGA:vga|sincronizadorV:sv" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv Line: 12
+Warning (10036): Verilog HDL or VHDL warning at sincronizadorV.sv(8): object "sincpulsos" assigned a value but never read File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv Line: 8
+Info (12128): Elaborating entity "sincronizadorH" for hierarchy "VGA:vga|sincronizadorH:sh" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv Line: 13
+Warning (10036): Verilog HDL or VHDL warning at sincronizadorH.sv(8): object "sincpulsos" assigned a value but never read File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv Line: 8
+Info (12128): Elaborating entity "Pixels" for hierarchy "VGA:vga|Pixels:p" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv Line: 308
+Info (12128): Elaborating entity "Font_Rom" for hierarchy "VGA:vga|Pixels:p|Font_Rom:rom" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv Line: 27
+Info (12128): Elaborating entity "controlador_color" for hierarchy "VGA:vga|controlador_color:cc" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv Line: 310
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "Memory_Management:mm|ROM:rom|ROM" is uninferred due to asynchronous read logic File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ROM.sv Line: 4
-    Info (276004): RAM logic "Instruction_Memory:im|Instructiondata" is uninferred due to inappropriate RAM size File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Instruction_Memory.sv Line: 3
-    Info (276007): RAM logic "CPU:arm|Register_File:rf|register" is uninferred due to asynchronous read logic File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/Register_File.sv Line: 7
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/Proyecto_cpu.ram0_Instruction_Memory_6c21a04c.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276007): RAM logic "Memory_Management:mm|ROM:rom|ROM" is uninferred due to asynchronous read logic File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv Line: 4
+    Info (276004): RAM logic "Instruction_Memory:im|Instructiondata" is uninferred due to inappropriate RAM size File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv Line: 3
+    Info (276007): RAM logic "CPU:arm|Register_File:rf|register" is uninferred due to asynchronous read logic File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv Line: 7
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/Proyecto_cpu.ram0_Instruction_Memory_6c21a04c.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[0]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[1]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[2]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[3]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[4]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[5]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[6]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[7]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[8]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[9]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[10]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[11]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[12]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[13]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[14]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[15]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[16]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[17]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[18]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[19]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[20]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[21]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[22]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[23]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[24]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[25]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[26]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[27]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[28]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[29]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[30]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
-    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[31]" feeding internal logic into a wire File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[0]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[1]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[2]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[3]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[4]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[5]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[6]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[7]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[8]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[9]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[10]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[11]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[12]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[13]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[14]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[15]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[16]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[17]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[18]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[19]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[20]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[21]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[22]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[23]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[24]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[25]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[26]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[27]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[28]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[29]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[30]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
+    Warning (13049): Converted tri-state buffer "CPU:arm|ALU:uut|Mux:m|result[31]" feeding internal logic into a wire File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv Line: 3
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "VGA:vga|Pixels:p|Font_Rom:rom|ROM_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to ROM
@@ -3667,8 +3667,8 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/Proyecto_cpu.ram0_Font_Rom_d6022abf.hdl.mif
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "CPU:arm|ALU:uut|divisor_nb:div|Div0" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/divisor_nb.sv Line: 4
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "CPU:arm|ALU:uut|modulo_nb:mod|Mod0" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/modulo_nb.sv Line: 4
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "CPU:arm|ALU:uut|divisor_nb:div|Div0" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv Line: 4
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "CPU:arm|ALU:uut|modulo_nb:mod|Mod0" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv Line: 4
 Info (12130): Elaborated megafunction instantiation "VGA:vga|Pixels:p|Font_Rom:rom|altsyncram:ROM_rtl_0"
 Info (12133): Instantiated megafunction "VGA:vga|Pixels:p|Font_Rom:rom|altsyncram:ROM_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -3682,50 +3682,50 @@ Info (12133): Instantiated megafunction "VGA:vga|Pixels:p|Font_Rom:rom|altsyncra
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/Proyecto_cpu.ram0_Font_Rom_d6022abf.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8ud1.tdf
-    Info (12023): Found entity 1: altsyncram_8ud1 File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/altsyncram_8ud1.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "CPU:arm|ALU:uut|divisor_nb:div|lpm_divide:Div0" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/divisor_nb.sv Line: 4
-Info (12133): Instantiated megafunction "CPU:arm|ALU:uut|divisor_nb:div|lpm_divide:Div0" with the following parameter: File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/divisor_nb.sv Line: 4
+    Info (12023): Found entity 1: altsyncram_8ud1 File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/altsyncram_8ud1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "CPU:arm|ALU:uut|divisor_nb:div|lpm_divide:Div0" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv Line: 4
+Info (12133): Instantiated megafunction "CPU:arm|ALU:uut|divisor_nb:div|lpm_divide:Div0" with the following parameter: File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv Line: 4
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3dm.tdf
-    Info (12023): Found entity 1: lpm_divide_3dm File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/lpm_divide_3dm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_3dm File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/lpm_divide_3dm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/sign_div_unsign_9nh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/sign_div_unsign_9nh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
-    Info (12023): Found entity 1: alt_u_div_o2f File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/alt_u_div_o2f.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "CPU:arm|ALU:uut|modulo_nb:mod|lpm_divide:Mod0" File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/modulo_nb.sv Line: 4
-Info (12133): Instantiated megafunction "CPU:arm|ALU:uut|modulo_nb:mod|lpm_divide:Mod0" with the following parameter: File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/ALU/modulo_nb.sv Line: 4
+    Info (12023): Found entity 1: alt_u_div_o2f File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/alt_u_div_o2f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "CPU:arm|ALU:uut|modulo_nb:mod|lpm_divide:Mod0" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv Line: 4
+Info (12133): Instantiated megafunction "CPU:arm|ALU:uut|modulo_nb:mod|lpm_divide:Mod0" with the following parameter: File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv Line: 4
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_65m.tdf
-    Info (12023): Found entity 1: lpm_divide_65m File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/db/lpm_divide_65m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_65m File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/db/lpm_divide_65m.tdf Line: 25
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sync" is stuck at GND File: C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/CPU_VGA.sv Line: 3
+    Warning (13410): Pin "sync" is stuck at GND File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 3
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 259 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/output_files/Proyecto_cpu.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/output_files/Proyecto_cpu.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8891 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8899 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 8843 logic cells
+    Info (21061): Implemented 8851 logic cells
     Info (21064): Implemented 8 RAM segments
     Info (21062): Implemented 2 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
-    Info: Peak virtual memory: 4936 megabytes
-    Info: Processing ended: Mon Jun 14 19:27:54 2021
-    Info: Elapsed time: 00:01:24
-    Info: Total CPU time (on all processors): 00:01:27
+    Info: Peak virtual memory: 4984 megabytes
+    Info: Processing ended: Mon Jun 14 20:22:08 2021
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:39
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/output_files/Proyecto_cpu.map.smsg.
+The suppressed messages can be found in C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/output_files/Proyecto_cpu.map.smsg.
 
 

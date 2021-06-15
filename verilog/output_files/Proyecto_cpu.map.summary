@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Jun 14 19:27:53 2021
+Analysis & Synthesis Status : Successful - Mon Jun 14 20:22:08 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Proyecto_cpu
 Top-level Entity Name : CPU_VGA
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 2436
+Total registers : 2435
 Total pins : 38
 Total virtual pins : 0
 Total block memory bits : 16,384
