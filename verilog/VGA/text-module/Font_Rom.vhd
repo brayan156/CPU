@@ -25,15 +25,13 @@ use IEEE.NUMERIC_STD.ALL;
 
 -- note this line.The package is compiled to this directory by default.
 -- so don't forget to include this directory. 
-library work;
--- this line also is must.This includes the particular package into your program.
-use work.commonPak.all;
+
 
 entity Font_Rom is
 	port(
 		clk: in std_logic;
 		addr: in integer;
-		fontRow: out std_logic_vector(FONT_WIDTH-1 downto 0)
+		fontRow: out std_logic_vector(7 downto 0)
 	);
 end Font_Rom;
 
@@ -42,7 +40,7 @@ architecture Behavioral of Font_Rom is
     -- 2^7 charactors
     -- + 2^4 row per charactor 
     -- therefore the total array size is 2^11 = 2048
-	type rom_type is array (0 to 2**11-1) of std_logic_vector(FONT_WIDTH-1 downto 0);
+	type rom_type is array (0 to 2**11-1) of std_logic_vector(7 downto 0);
 
 	-- ROM definition
 	signal ROM: rom_type := (   -- 2^11-by-8

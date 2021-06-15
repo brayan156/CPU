@@ -140,7 +140,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE ff_enable.sv
 set_global_assignment -name SYSTEMVERILOG_FILE CPU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE condition_check.sv
 set_global_assignment -name VHDL_FILE "VGA/text-module/Font_Rom.vhd"
-set_global_assignment -name VHDL_FILE "VGA/text-module/commonPak.vhd"
 set_global_assignment -name SYSTEMVERILOG_FILE CPU_VGA.sv
 set_global_assignment -name TEXT_FILE binfile.txt
 set_global_assignment -name SYSTEMVERILOG_FILE MuxMOV.sv

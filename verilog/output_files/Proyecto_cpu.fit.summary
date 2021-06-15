@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue Jun 15 16:22:29 2021
+Fitter Status : Successful - Tue Jun 15 17:14:25 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Proyecto_cpu
 Top-level Entity Name : CPU_VGA
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 4,724 / 32,070 ( 15 % )
-Total registers : 4374
+Logic utilization (in ALMs) : 4,704 / 32,070 ( 15 % )
+Total registers : 4395
 Total pins : 38 / 457 ( 8 % )
 Total virtual pins : 0
 Total block memory bits : 16,384 / 4,065,280 ( < 1 % )
