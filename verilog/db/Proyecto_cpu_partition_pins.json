@@ -124,6 +124,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "swinit",
+					"strict" : false
+				},
+				{
+					"name" : "swxor",
+					"strict" : false
+				},
+				{
+					"name" : "swxor0",
+					"strict" : false
+				},
+				{
 					"name" : "swxor2",
 					"strict" : false
 				},
@@ -132,23 +144,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "swxor0",
-					"strict" : false
-				},
-				{
-					"name" : "swxor",
-					"strict" : false
-				},
-				{
-					"name" : "swnot",
-					"strict" : false
-				},
-				{
 					"name" : "swadd",
 					"strict" : false
 				},
 				{
-					"name" : "swinit",
+					"name" : "swnot",
 					"strict" : false
 				}
 			]

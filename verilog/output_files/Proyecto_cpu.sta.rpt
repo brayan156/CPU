@@ -1,5 +1,5 @@
 Timing Analyzer report for Proyecto_cpu
-Tue Jun 15 12:51:05 2021
+Tue Jun 15 16:23:08 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -100,22 +100,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 2.58        ;
+; Average used               ; 4.45        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  52.3%      ;
-;     Processor 3            ;  46.9%      ;
-;     Processor 4            ;  46.8%      ;
-;     Processor 5            ;   1.5%      ;
-;     Processor 6            ;   1.5%      ;
-;     Processor 7            ;   1.5%      ;
-;     Processor 8            ;   1.5%      ;
-;     Processor 9            ;   1.5%      ;
-;     Processor 10           ;   1.5%      ;
-;     Processor 11           ;   1.5%      ;
-;     Processor 12           ;   1.5%      ;
+;     Processor 2            ;  82.2%      ;
+;     Processor 3            ;  81.8%      ;
+;     Processor 4            ;  81.3%      ;
+;     Processor 5            ;  12.5%      ;
+;     Processor 6            ;  12.5%      ;
+;     Processor 7            ;  12.5%      ;
+;     Processor 8            ;  12.5%      ;
+;     Processor 9            ;  12.5%      ;
+;     Processor 10           ;  12.5%      ;
+;     Processor 11           ;  12.5%      ;
+;     Processor 12           ;  12.5%      ;
 +----------------------------+-------------+
 
 
@@ -130,15 +130,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Fmax Summary                                         ;
-+------------+-----------------+--------------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                           ; Note ;
-+------------+-----------------+--------------------------------------+------+
-; 5.43 MHz   ; 5.43 MHz        ; clk_mitad_MHz:cmh|clk2               ;      ;
-; 283.61 MHz ; 283.61 MHz      ; VGA:vga|sincronizadorH:sh|pasarlinea ;      ;
-; 322.58 MHz ; 322.58 MHz      ; clk                                  ;      ;
-+------------+-----------------+--------------------------------------+------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                                                                                         ;
++------------+-----------------+--------------------------------------+------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                           ; Note                                                 ;
++------------+-----------------+--------------------------------------+------------------------------------------------------+
+; 5.32 MHz   ; 5.32 MHz        ; clk_mitad_MHz:cmh|clk2               ;                                                      ;
+; 221.09 MHz ; 221.09 MHz      ; VGA:vga|sincronizadorH:sh|pasarlinea ;                                                      ;
+; 582.41 MHz ; 492.61 MHz      ; clk                                  ; limit due to low minimum pulse width violation (tcl) ;
++------------+-----------------+--------------------------------------+------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -153,21 +153,21 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------+---------+---------------+
 ; Clock                                ; Slack   ; End Point TNS ;
 +--------------------------------------+---------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -91.618 ; -263814.951   ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; -2.526  ; -34.440       ;
-; clk                                  ; -2.100  ; -4.734        ;
+; clk_mitad_MHz:cmh|clk2               ; -93.432 ; -232551.472   ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; -3.523  ; -33.819       ;
+; clk                                  ; -0.717  ; -1.234        ;
 +--------------------------------------+---------+---------------+
 
 
-+--------------------------------------------------------------+
-; Slow 1100mV 85C Model Hold Summary                           ;
-+--------------------------------------+-------+---------------+
-; Clock                                ; Slack ; End Point TNS ;
-+--------------------------------------+-------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; 0.344 ; 0.000         ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.841 ; 0.000         ;
-; clk                                  ; 1.208 ; 0.000         ;
-+--------------------------------------+-------+---------------+
++---------------------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary                            ;
++--------------------------------------+--------+---------------+
+; Clock                                ; Slack  ; End Point TNS ;
++--------------------------------------+--------+---------------+
+; clk_mitad_MHz:cmh|clk2               ; -0.519 ; -0.519        ;
+; clk                                  ; 0.564  ; 0.000         ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.883  ; 0.000         ;
++--------------------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -187,9 +187,9 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -2485.604     ;
-; clk                                  ; -0.569 ; -2.824        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; -0.394 ; -7.140        ;
+; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -2598.074     ;
+; clk                                  ; -0.515 ; -1.818        ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; -0.394 ; -6.629        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -199,15 +199,15 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary                                          ;
-+------------+-----------------+--------------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                           ; Note ;
-+------------+-----------------+--------------------------------------+------+
-; 5.37 MHz   ; 5.37 MHz        ; clk_mitad_MHz:cmh|clk2               ;      ;
-; 285.31 MHz ; 285.31 MHz      ; VGA:vga|sincronizadorH:sh|pasarlinea ;      ;
-; 334.9 MHz  ; 334.9 MHz       ; clk                                  ;      ;
-+------------+-----------------+--------------------------------------+------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                                                                                          ;
++------------+-----------------+--------------------------------------+------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                           ; Note                                                 ;
++------------+-----------------+--------------------------------------+------------------------------------------------------+
+; 5.27 MHz   ; 5.27 MHz        ; clk_mitad_MHz:cmh|clk2               ;                                                      ;
+; 224.01 MHz ; 224.01 MHz      ; VGA:vga|sincronizadorH:sh|pasarlinea ;                                                      ;
+; 577.7 MHz  ; 490.2 MHz       ; clk                                  ; limit due to low minimum pulse width violation (tcl) ;
++------------+-----------------+--------------------------------------+------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -216,21 +216,21 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------+---------+---------------+
 ; Clock                                ; Slack   ; End Point TNS ;
 +--------------------------------------+---------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -92.548 ; -266746.000   ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; -2.505  ; -34.165       ;
-; clk                                  ; -1.986  ; -4.469        ;
+; clk_mitad_MHz:cmh|clk2               ; -94.431 ; -235064.732   ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; -3.464  ; -33.528       ;
+; clk                                  ; -0.731  ; -1.250        ;
 +--------------------------------------+---------+---------------+
 
 
-+--------------------------------------------------------------+
-; Slow 1100mV 0C Model Hold Summary                            ;
-+--------------------------------------+-------+---------------+
-; Clock                                ; Slack ; End Point TNS ;
-+--------------------------------------+-------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; 0.368 ; 0.000         ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.787 ; 0.000         ;
-; clk                                  ; 1.137 ; 0.000         ;
-+--------------------------------------+-------+---------------+
++---------------------------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary                             ;
++--------------------------------------+--------+---------------+
+; Clock                                ; Slack  ; End Point TNS ;
++--------------------------------------+--------+---------------+
+; clk_mitad_MHz:cmh|clk2               ; -0.754 ; -0.754        ;
+; clk                                  ; 0.550  ; 0.000         ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.829  ; 0.000         ;
++--------------------------------------+--------+---------------+
 
 
 -----------------------------------------
@@ -250,9 +250,9 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -2358.540     ;
-; clk                                  ; -0.574 ; -2.900        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; -0.394 ; -7.182        ;
+; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -2659.501     ;
+; clk                                  ; -0.520 ; -1.828        ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; -0.394 ; -6.669        ;
 +--------------------------------------+--------+---------------+
 
 
@@ -267,9 +267,9 @@ No synchronizer chains to report.
 +--------------------------------------+---------+---------------+
 ; Clock                                ; Slack   ; End Point TNS ;
 +--------------------------------------+---------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -53.437 ; -153004.198   ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; -1.131  ; -15.377       ;
-; clk                                  ; -1.097  ; -2.178        ;
+; clk_mitad_MHz:cmh|clk2               ; -53.828 ; -134174.517   ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; -2.013  ; -17.001       ;
+; clk                                  ; -0.140  ; -0.156        ;
 +--------------------------------------+---------+---------------+
 
 
@@ -278,9 +278,9 @@ No synchronizer chains to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -0.208 ; -0.208        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.445  ; 0.000         ;
-; clk                                  ; 0.712  ; 0.000         ;
+; clk_mitad_MHz:cmh|clk2               ; -0.242 ; -0.242        ;
+; clk                                  ; 0.293  ; 0.000         ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.416  ; 0.000         ;
 +--------------------------------------+--------+---------------+
 
 
@@ -301,9 +301,9 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -601.225      ;
-; clk                                  ; -0.539 ; -2.147        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.140  ; 0.000         ;
+; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -80.739       ;
+; clk                                  ; -0.475 ; -1.206        ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.136  ; 0.000         ;
 +--------------------------------------+--------+---------------+
 
 
@@ -318,9 +318,9 @@ No synchronizer chains to report.
 +--------------------------------------+---------+---------------+
 ; Clock                                ; Slack   ; End Point TNS ;
 +--------------------------------------+---------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -49.345 ; -141677.089   ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; -1.010  ; -13.727       ;
-; clk                                  ; -0.896  ; -1.757        ;
+; clk_mitad_MHz:cmh|clk2               ; -49.915 ; -124257.253   ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; -1.760  ; -14.946       ;
+; clk                                  ; -0.089  ; -0.089        ;
 +--------------------------------------+---------+---------------+
 
 
@@ -329,9 +329,9 @@ No synchronizer chains to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -0.194 ; -0.194        ;
+; clk_mitad_MHz:cmh|clk2               ; -0.517 ; -0.517        ;
+; clk                                  ; 0.262  ; 0.000         ;
 ; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.387  ; 0.000         ;
-; clk                                  ; 0.627  ; 0.000         ;
 +--------------------------------------+--------+---------------+
 
 
@@ -352,9 +352,9 @@ No paths to report.
 +--------------------------------------+--------+---------------+
 ; Clock                                ; Slack  ; End Point TNS ;
 +--------------------------------------+--------+---------------+
-; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -420.809      ;
-; clk                                  ; -0.546 ; -2.184        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.144  ; 0.000         ;
+; clk_mitad_MHz:cmh|clk2               ; -2.174 ; -80.464       ;
+; clk                                  ; -0.471 ; -1.206        ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; 0.142  ; 0.000         ;
 +--------------------------------------+--------+---------------+
 
 
@@ -369,14 +369,14 @@ No synchronizer chains to report.
 +---------------------------------------+-------------+--------+----------+---------+---------------------+
 ; Clock                                 ; Setup       ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------------+-------------+--------+----------+---------+---------------------+
-; Worst-case Slack                      ; -92.548     ; -0.208 ; N/A      ; N/A     ; -2.174              ;
-;  VGA:vga|sincronizadorH:sh|pasarlinea ; -2.526      ; 0.387  ; N/A      ; N/A     ; -0.394              ;
-;  clk                                  ; -2.100      ; 0.627  ; N/A      ; N/A     ; -0.574              ;
-;  clk_mitad_MHz:cmh|clk2               ; -92.548     ; -0.208 ; N/A      ; N/A     ; -2.174              ;
-; Design-wide TNS                       ; -266784.634 ; -0.208 ; 0.0      ; 0.0     ; -2495.568           ;
-;  VGA:vga|sincronizadorH:sh|pasarlinea ; -34.440     ; 0.000  ; N/A      ; N/A     ; -7.182              ;
-;  clk                                  ; -4.734      ; 0.000  ; N/A      ; N/A     ; -2.900              ;
-;  clk_mitad_MHz:cmh|clk2               ; -266746.000 ; -0.208 ; N/A      ; N/A     ; -2485.604           ;
+; Worst-case Slack                      ; -94.431     ; -0.754 ; N/A      ; N/A     ; -2.174              ;
+;  VGA:vga|sincronizadorH:sh|pasarlinea ; -3.523      ; 0.387  ; N/A      ; N/A     ; -0.394              ;
+;  clk                                  ; -0.731      ; 0.262  ; N/A      ; N/A     ; -0.520              ;
+;  clk_mitad_MHz:cmh|clk2               ; -94.431     ; -0.754 ; N/A      ; N/A     ; -2.174              ;
+; Design-wide TNS                       ; -235099.51  ; -0.754 ; 0.0      ; 0.0     ; -2667.998           ;
+;  VGA:vga|sincronizadorH:sh|pasarlinea ; -33.819     ; 0.000  ; N/A      ; N/A     ; -6.669              ;
+;  clk                                  ; -1.250      ; 0.000  ; N/A      ; N/A     ; -1.828              ;
+;  clk_mitad_MHz:cmh|clk2               ; -235064.732 ; -0.754 ; N/A      ; N/A     ; -2659.501           ;
 +---------------------------------------+-------------+--------+----------+---------+---------------------+
 
 
@@ -424,13 +424,13 @@ No synchronizer chains to report.
 +--------+--------------+-----------------+-----------------+
 ; reset  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clk    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; swinit ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; swxor  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; swxor0 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; swxor2 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; swxor1 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; swxor0 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; swxor  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; swnot  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; swadd  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; swinit ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; swnot  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +--------+--------------+-----------------+-----------------+
 
 
@@ -587,10 +587,10 @@ No synchronizer chains to report.
 +--------------------------------------+--------------------------------------+--------------+----------+--------------+----------+
 ; From Clock                           ; To Clock                             ; RR Paths     ; FR Paths ; RF Paths     ; FF Paths ;
 +--------------------------------------+--------------------------------------+--------------+----------+--------------+----------+
-; clk                                  ; clk                                  ; 3            ; 0        ; 0            ; 0        ;
-; clk_mitad_MHz:cmh|clk2               ; clk_mitad_MHz:cmh|clk2               ; > 2147483647 ; 14454    ; > 2147483647 ; 4584     ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; clk_mitad_MHz:cmh|clk2               ; 67655        ; 0        ; 0            ; 0        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; VGA:vga|sincronizadorH:sh|pasarlinea ; 217          ; 0        ; 0            ; 0        ;
+; clk                                  ; clk                                  ; 2            ; 0        ; 0            ; 0        ;
+; clk_mitad_MHz:cmh|clk2               ; clk_mitad_MHz:cmh|clk2               ; > 2147483647 ; 1912     ; > 2147483647 ; 4121     ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; clk_mitad_MHz:cmh|clk2               ; 13696        ; 0        ; 0            ; 0        ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; VGA:vga|sincronizadorH:sh|pasarlinea ; 199          ; 0        ; 0            ; 0        ;
 +--------------------------------------+--------------------------------------+--------------+----------+--------------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -600,10 +600,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------+--------------------------------------+--------------+----------+--------------+----------+
 ; From Clock                           ; To Clock                             ; RR Paths     ; FR Paths ; RF Paths     ; FF Paths ;
 +--------------------------------------+--------------------------------------+--------------+----------+--------------+----------+
-; clk                                  ; clk                                  ; 3            ; 0        ; 0            ; 0        ;
-; clk_mitad_MHz:cmh|clk2               ; clk_mitad_MHz:cmh|clk2               ; > 2147483647 ; 14454    ; > 2147483647 ; 4584     ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; clk_mitad_MHz:cmh|clk2               ; 67655        ; 0        ; 0            ; 0        ;
-; VGA:vga|sincronizadorH:sh|pasarlinea ; VGA:vga|sincronizadorH:sh|pasarlinea ; 217          ; 0        ; 0            ; 0        ;
+; clk                                  ; clk                                  ; 2            ; 0        ; 0            ; 0        ;
+; clk_mitad_MHz:cmh|clk2               ; clk_mitad_MHz:cmh|clk2               ; > 2147483647 ; 1912     ; > 2147483647 ; 4121     ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; clk_mitad_MHz:cmh|clk2               ; 13696        ; 0        ; 0            ; 0        ;
+; VGA:vga|sincronizadorH:sh|pasarlinea ; VGA:vga|sincronizadorH:sh|pasarlinea ; 199          ; 0        ; 0            ; 0        ;
 +--------------------------------------+--------------------------------------+--------------+----------+--------------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -628,7 +628,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 160   ; 160  ;
+; Unconstrained Input Port Paths  ; 3788  ; 3788 ;
 ; Unconstrained Output Ports      ; 28    ; 28   ;
 ; Unconstrained Output Port Paths ; 227   ; 227  ;
 +---------------------------------+-------+------+
@@ -755,7 +755,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 15 12:47:33 2021
+    Info: Processing started: Tue Jun 15 16:22:39 2021
 Info: Command: quartus_sta Proyecto_cpu -c Proyecto_cpu
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -765,117 +765,117 @@ Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Proyecto_cpu.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name VGA:vga|sincronizadorH:sh|pasarlinea VGA:vga|sincronizadorH:sh|pasarlinea
     Info (332105): create_clock -period 1.000 -name clk_mitad_MHz:cmh|clk2 clk_mitad_MHz:cmh|clk2
     Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name VGA:vga|sincronizadorH:sh|pasarlinea VGA:vga|sincronizadorH:sh|pasarlinea
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -91.618
+Info (332146): Worst-case setup slack is -93.432
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -91.618         -263814.951 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -2.526             -34.440 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):    -2.100              -4.734 clk 
-Info (332146): Worst-case hold slack is 0.344
+    Info (332119):   -93.432         -232551.472 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -3.523             -33.819 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -0.717              -1.234 clk 
+Info (332146): Worst-case hold slack is -0.519
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.344               0.000 clk_mitad_MHz:cmh|clk2 
-    Info (332119):     0.841               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):     1.208               0.000 clk 
+    Info (332119):    -0.519              -0.519 clk_mitad_MHz:cmh|clk2 
+    Info (332119):     0.564               0.000 clk 
+    Info (332119):     0.883               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -2485.604 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -0.569              -2.824 clk 
-    Info (332119):    -0.394              -7.140 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -2.174           -2598.074 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -0.515              -1.818 clk 
+    Info (332119):    -0.394              -6.629 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -92.548
+Info (332146): Worst-case setup slack is -94.431
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -92.548         -266746.000 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -2.505             -34.165 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):    -1.986              -4.469 clk 
-Info (332146): Worst-case hold slack is 0.368
+    Info (332119):   -94.431         -235064.732 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -3.464             -33.528 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -0.731              -1.250 clk 
+Info (332146): Worst-case hold slack is -0.754
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.368               0.000 clk_mitad_MHz:cmh|clk2 
-    Info (332119):     0.787               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):     1.137               0.000 clk 
+    Info (332119):    -0.754              -0.754 clk_mitad_MHz:cmh|clk2 
+    Info (332119):     0.550               0.000 clk 
+    Info (332119):     0.829               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -2358.540 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -0.574              -2.900 clk 
-    Info (332119):    -0.394              -7.182 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -2.174           -2659.501 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -0.520              -1.828 clk 
+    Info (332119):    -0.394              -6.669 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -53.437
+Info (332146): Worst-case setup slack is -53.828
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -53.437         -153004.198 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -1.131             -15.377 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):    -1.097              -2.178 clk 
-Info (332146): Worst-case hold slack is -0.208
+    Info (332119):   -53.828         -134174.517 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -2.013             -17.001 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -0.140              -0.156 clk 
+Info (332146): Worst-case hold slack is -0.242
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.208              -0.208 clk_mitad_MHz:cmh|clk2 
-    Info (332119):     0.445               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):     0.712               0.000 clk 
+    Info (332119):    -0.242              -0.242 clk_mitad_MHz:cmh|clk2 
+    Info (332119):     0.293               0.000 clk 
+    Info (332119):     0.416               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -601.225 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -0.539              -2.147 clk 
-    Info (332119):     0.140               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -2.174             -80.739 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -0.475              -1.206 clk 
+    Info (332119):     0.136               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -49.345
+Info (332146): Worst-case setup slack is -49.915
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -49.345         -141677.089 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -1.010             -13.727 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):    -0.896              -1.757 clk 
-Info (332146): Worst-case hold slack is -0.194
+    Info (332119):   -49.915         -124257.253 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -1.760             -14.946 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -0.089              -0.089 clk 
+Info (332146): Worst-case hold slack is -0.517
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.194              -0.194 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -0.517              -0.517 clk_mitad_MHz:cmh|clk2 
+    Info (332119):     0.262               0.000 clk 
     Info (332119):     0.387               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
-    Info (332119):     0.627               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -420.809 clk_mitad_MHz:cmh|clk2 
-    Info (332119):    -0.546              -2.184 clk 
-    Info (332119):     0.144               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
+    Info (332119):    -2.174             -80.464 clk_mitad_MHz:cmh|clk2 
+    Info (332119):    -0.471              -1.206 clk 
+    Info (332119):     0.142               0.000 VGA:vga|sincronizadorH:sh|pasarlinea 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5606 megabytes
-    Info: Processing ended: Tue Jun 15 12:51:05 2021
-    Info: Elapsed time: 00:03:32
-    Info: Total CPU time (on all processors): 00:04:22
+    Info: Peak virtual memory: 5569 megabytes
+    Info: Processing ended: Tue Jun 15 16:23:08 2021
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:01:08
 
 
