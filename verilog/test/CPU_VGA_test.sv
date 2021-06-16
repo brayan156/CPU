@@ -10,7 +10,8 @@ module CPU_VGA_test();
 	initial begin
 		clk=0; reset=0; swxor2=0;swxor1=0;swxor0=0;swxor=0;swnot=0;swadd=0;swinit=0; #3;
 		reset=1; #3;
-		reset=0; swinit=1;swxor1=1;swxor0=1; swxor=1; #3;
+		reset=0; swxor1=1;swxor0=1; swxor=1; #500;
+		swinit=1; #10;
 		
 		
 	end

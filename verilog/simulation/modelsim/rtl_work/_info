@@ -9,177 +9,924 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/simulation/modelsim
-vclk_mitad_MHz
+Z0 dC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/simulation/modelsim
+vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1623718876
+Z2 !s110 1623815836
 !i10b 1
-!s100 iGihz6MLTEm9BKMe0GTPD1
+!s100 j<>X<cdHoOAO2UiZn@bn23
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IdkieS_;_8<L<d0O?ff=?S3
+IFUY>feYU`z=6OE>];2KV]0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1623552859
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/clk_mitad_MHz.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/clk_mitad_MHz.sv
-!i122 4
-Z6 L0 1 16
-Z7 OV;L;2020.1;71
+w1623473270
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv
+!i122 28
+L0 1 37
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1623718876.000000
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/clk_mitad_MHz.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/clk_mitad_MHz.sv|
+Z6 !s108 1623815836.000000
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/ALU.sv|
 !i113 1
-Z9 o-sv -work work
-Z10 !s92 -sv -work work +incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA
-Z11 tCvgOpt 0
-nclk_mitad_@m@hz
-Pcommonpak
-Z12 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 8
-R5
-R0
-Z15 8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd
-Z16 FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd
-l0
-L16 1
-V:mP]DWEi9Vl<E6P71?nUO0
-!s100 b=L9=3O^i;OkSzWfzQ54A0
-Z17 OV;C;2020.1;71
-31
-b1
-Z18 !s110 1623718877
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU}
+Z9 tCvgOpt 0
+n@a@l@u
+vc_and
+R1
+Z10 !s110 1623815835
 !i10b 1
-Z19 !s108 1623718877.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd|
-Z21 !s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/commonPak.vhd|
+!s100 QnXk7>Yk^@V@1dTAXmKa12
+R3
+I]Xl=LznCX5KPW2>fEVTVk0
+R4
+S1
+R0
+w1617144178
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_and.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_and.sv
+!i122 27
+Z11 L0 1 6
+R5
+r1
+!s85 0
+31
+Z12 !s108 1623815835.000000
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_and.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_and.sv|
 !i113 1
-Z22 o-93 -work work
-Z23 tExplicit 1 CvgOpt 0
-Bbody
-Z24 DPx4 work 9 commonpak 0 22 :mP]DWEi9Vl<E6P71?nUO0
+R7
+R8
+R9
+vc_or
+R1
+R10
+!i10b 1
+!s100 ^7dRFJoMV0KNJ];Pc[V>j3
+R3
+Ik43HQbLVeSOV?I6Ni]4U01
+R4
+S1
+R0
+w1617191784
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_or.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_or.sv
+!i122 26
+R11
+R5
+r1
+!s85 0
+31
 R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_or.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_or.sv|
+!i113 1
+R7
+R8
+R9
+vc_xor
+R1
+R10
+!i10b 1
+!s100 A9`WoKe6GZDE@F7nMhF7P1
+R3
+IN]@9f8IJO^?L?FXg^Le_E2
+R4
+S1
+R0
+w1617187622
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_xor.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_xor.sv
+!i122 25
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_xor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/c_xor.sv|
+!i113 1
+R7
+R8
+R9
+vCharacter_manager
+R1
+Z13 !s110 1623815837
+!i10b 1
+!s100 d?WdZa;K5A`c7m?[j3Ujb1
+R3
+IVQINYgOzIRc9H0b3_D^EP0
+R4
+S1
+R0
+w1623796874
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Character_manager.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Character_manager.sv
+!i122 40
+L0 1 52
+R5
+r1
+!s85 0
+31
+Z14 !s108 1623815837.000000
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Character_manager.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Character_manager.sv|
+!i113 1
+R7
+Z15 !s92 -sv -work work {+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog}
+R9
+n@character_manager
+vclk_mitad_MHz
+R1
+Z16 !s110 1623815834
+!i10b 1
+!s100 iGihz6MLTEm9BKMe0GTPD1
+R3
+Ibh5kB];88<0_aeVNTXl``1
+R4
+S1
+R0
+w1622084945
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/clk_mitad_MHz.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/clk_mitad_MHz.sv
+!i122 5
+Z17 L0 1 16
+R5
+r1
+!s85 0
+31
+Z18 !s108 1623815834.000000
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/clk_mitad_MHz.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/clk_mitad_MHz.sv|
+!i113 1
+R7
+Z19 !s92 -sv -work work {+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA}
+R9
+nclk_mitad_@m@hz
+vcondition_check
+R1
 R13
+!i10b 1
+!s100 Ne:JUCLRXaJY?0zijc6[;2
+R3
+IhhVY<meRKGhM1neD[?TVW3
+R4
+S1
+R0
+w1623360201
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/condition_check.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/condition_check.sv
+!i122 36
+L0 1 29
+R5
+r1
+!s85 0
+31
 R14
-!i122 8
-l0
-L80 1
-VD=aU]]GQez2haTRaPT_ze2
-!s100 A[b6TA@?o>1CM]Fzk7A421
-R17
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/condition_check.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/condition_check.sv|
+!i113 1
+R7
+R15
+R9
+vCondition_Logic
+R1
+R16
+!i10b 1
+!s100 ^5Jbm<M`zHIU[FW1AO^=e2
+R3
+IN24`=PI?c:e7k?KU1P6ib1
+R4
+S1
+R0
+w1623438597
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv
+!i122 9
+L0 1 27
+R5
+r1
+!s85 0
 31
 R18
-!i10b 1
-R19
-R20
-R21
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Condition_Logic.sv|
 !i113 1
-R22
-R23
+R7
+R15
+R9
+n@condition_@logic
+vControl_Unit
+R1
+R16
+!i10b 1
+!s100 2n[6NEhU5XMRb6:Il@JSL1
+R3
+IUaQB1mRnNfaIiLYQiZDE_2
+R4
+S1
+R0
+w1623526799
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv
+!i122 8
+L0 1 17
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Control_Unit.sv|
+!i113 1
+R7
+R15
+R9
+n@control_@unit
 vcontrolador_color
 R1
-R2
+R16
 !i10b 1
 !s100 dgH=Q4h6c_7B19J;:309f0
 R3
-IY:R:^OD;K?Vd@R6:>Gm5_2
+I=eD@4SPCjjMUBlo[kBmNn0
 R4
 S1
 R0
-w1623553286
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/controlador_color.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/controlador_color.sv
-!i122 3
+w1623657730
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/controlador_color.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/controlador_color.sv
+!i122 4
 L0 1 31
-R7
+R5
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/controlador_color.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/controlador_color.sv|
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/controlador_color.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/controlador_color.sv|
 !i113 1
+R7
+R19
 R9
-R10
-R11
-Efont_rom
-Z25 w1623707682
-R12
-R24
-Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+vCPU
+R1
 R13
-R14
-!i122 9
+!i10b 1
+!s100 nNL2_FgXdg6=_]n?8adkB1
+R3
+I@_gPQeFjUQAeaT]ZGfFzR2
+R4
+S1
 R0
-Z27 8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd
-Z28 FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd
-l0
-L32 1
-V[CWaJA_1J73>VA_Yb[O=c1
-!s100 6SJE6TjTKo>g0Jz>ca_K;2
-R17
+w1623539960
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv
+!i122 35
+L0 1 47
+R5
+r1
+!s85 0
 31
-R18
-!i10b 1
-R19
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd|
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd|
-!i113 1
-R22
-R23
-Abehavioral
-R12
-R24
-R26
-R13
 R14
-DEx4 work 8 font_rom 0 22 [CWaJA_1J73>VA_Yb[O=c1
-!i122 9
-l2227
-L40 2198
-VDA>QQ4JhQ5kT=Je4>][UI3
-!s100 TAhL4:RPz_TY>Skl[XA1T1
-R17
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU.sv|
+!i113 1
+R7
+R15
+R9
+n@c@p@u
+vCPU_VGA
+R1
+R13
+!i10b 1
+!s100 <1_KZa@RkW?OW_6CGd;<n2
+R3
+Iih>WO2=3DLi<2P;T0nH8l3
+R4
+S1
+R0
+w1623796873
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv
+!i122 37
+L0 1 23
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv|
+!i113 1
+R7
+R15
+R9
+n@c@p@u_@v@g@a
+vDecoder
+R1
+R16
+!i10b 1
+!s100 ZU18hc7337aUBb=bnVk@01
+R3
+IcYYfF<GeO:Q5c<Yo^g2Q63
+R4
+S1
+R0
+w1623734324
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Decoder.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Decoder.sv
+!i122 6
+L0 1 58
+R5
+r1
+!s85 0
 31
 R18
-!i10b 1
-R19
-R29
-Z30 !s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Font_Rom.vhd|
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Decoder.sv|
 !i113 1
-R22
+R7
+R15
+R9
+n@decoder
+vdivisor_nb
+R1
+R10
+!i10b 1
+!s100 P0i:ONDhf0d<2<:a8fB;]1
+R3
+IgH;`61f4TeY6W?jj@jL]j1
+R4
+S1
+R0
+w1617261651
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv
+!i122 24
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/divisor_nb.sv|
+!i113 1
+R7
+R8
+R9
+vExtender
+R1
+R13
+!i10b 1
+!s100 YzSYZXQn[GUZo?kiCRT]c3
+R3
+IFgiT9P9oEWj7L8Yn?ZclX0
+R4
+S1
+R0
+Z20 w1623360129
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Extender.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Extender.sv
+!i122 33
+Z21 L0 1 14
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Extender.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Extender.sv|
+!i113 1
+R7
+R15
+R9
+n@extender
+vff_enable
+R1
+R13
+!i10b 1
+!s100 V_hSn;MDND?W^OibIedDd1
+R3
+IF6k7CLGhj7JL7Y<;RZGk@2
+R4
+S1
+R0
+w1623349126
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ff_enable.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ff_enable.sv
+!i122 34
+Z22 L0 1 9
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ff_enable.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ff_enable.sv|
+!i113 1
+R7
+R15
+R9
+vfinal_test
+R1
+R13
+!i10b 1
+!s100 C57LmT^g_b5Tdod;cBKjj2
+R3
+IQ5CASNlZ?kWLemKC2:cC03
+R4
+S1
+R0
+w1623815815
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/final_test.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/final_test.sv
+!i122 41
+L0 1 49
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/final_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/final_test.sv|
+!i113 1
+R7
+R15
+R9
+vflag_carry
+R1
+R10
+!i10b 1
+!s100 NABm;:X0M7Og90T>A7D=Z1
+R3
+If2z2oL1CWgfVgCG[^>0?X3
+R4
+S1
+R0
+w1617190949
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_carry.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_carry.sv
+!i122 23
+Z23 L0 1 7
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_carry.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_carry.sv|
+!i113 1
+R7
+R8
+R9
+vflag_cero
+R1
+R10
+!i10b 1
+!s100 lfz^FM_<6`Y6T?CackjfM3
+R3
+I]5G;W^:GGWjMdLH2;abP<2
+R4
+S1
+R0
+w1617191802
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_cero.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_cero.sv
+!i122 22
 R23
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_cero.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_cero.sv|
+!i113 1
+R7
+R8
+R9
+vflag_negativo
+R1
+R10
+!i10b 1
+!s100 eJ5V2Dl@:f1>ASQLC5mBj2
+R3
+I^006gZ<C@@WeXiz3jMRNl3
+R4
+S1
+R0
+w1617191785
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_negativo.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_negativo.sv
+!i122 21
+R23
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_negativo.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_negativo.sv|
+!i113 1
+R7
+R8
+R9
+vflag_overflow
+R1
+R10
+!i10b 1
+!s100 _ieW^=7iQ[4_4=h3IZ^Ki2
+R3
+I5QBN2>e`EmO9DnMDb<6hj0
+R4
+S1
+R0
+w1617191831
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_overflow.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_overflow.sv
+!i122 20
+R22
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_overflow.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/flag_overflow.sv|
+!i113 1
+R7
+R8
+R9
+Efont_rom
+Z24 w1623798208
+Z25 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z26 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z27 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 44
+R0
+Z28 8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd
+Z29 FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd
+l0
+L30 1
+VfSPjozmhNeePKh5[B9]533
+!s100 X]bb1@[2W[0H]i@DeV6:H3
+Z30 OV;C;2020.1;71
+31
+Z31 !s110 1623815838
+!i10b 1
+Z32 !s108 1623815838.000000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd|
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd|
+!i113 1
+Z34 o-93 -work work
+Z35 tExplicit 1 CvgOpt 0
+Abehavioral
+R25
+R26
+R27
+DEx4 work 8 font_rom 0 22 fSPjozmhNeePKh5[B9]533
+!i122 44
+l2225
+L38 2198
+VnTAYT95V0k>`Z2Zgh6;aU0
+!s100 hXfG[0jRHS_of21eUelgg0
+R30
+31
+R31
+!i10b 1
+R32
+R33
+Z36 !s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Font_Rom.vhd|
+!i113 1
+R34
+R35
+vImm_Rotation
+R1
+R13
+!i10b 1
+!s100 ;i?:@[6kzC[G=01jCQG782
+R3
+IYf9;PU2T]zP@65z`99fQC1
+R4
+S1
+R0
+w1623532780
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Imm_Rotation.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Imm_Rotation.sv
+!i122 39
+Z37 L0 1 15
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Imm_Rotation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Imm_Rotation.sv|
+!i113 1
+R7
+R15
+R9
+n@imm_@rotation
+vInstruction_Memory
+R1
+R31
+!i10b 1
+!s100 4fbZo6NC?zQZNIUcQ@XDg1
+R3
+ID8dYJgLcDB`;]l`V9bJ991
+R4
+S1
+R0
+w1623335118
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv
+!i122 42
+R37
+R5
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Instruction_Memory.sv|
+!i113 1
+R7
+R15
+R9
+n@instruction_@memory
+vMemory_Management
+R1
+R2
+!i10b 1
+!s100 @3?jYcWcJGJYOg_6`>_8:0
+R3
+IRL2Sf2Oz9HQDI31Y?mLmT0
+R4
+S1
+R0
+w1623773608
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv
+!i122 29
+L0 1 67
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Memory_Management.sv|
+!i113 1
+R7
+R15
+R9
+n@memory_@management
+vmodulo_nb
+R1
+R10
+!i10b 1
+!s100 jJC2llOe6VXeIZHDDQ4aR1
+R3
+I8_5ffd5l[I7G<ch5BNR^I1
+R4
+S1
+R0
+w1617162016
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv
+!i122 19
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/modulo_nb.sv|
+!i113 1
+R7
+R8
+R9
+vmultiplicador
+R1
+R10
+!i10b 1
+!s100 ]8>j5BWCjVhA4:mR;cmdg1
+R3
+IBQm;[61WY5OSGZn]d:dRd1
+R4
+S1
+R0
+w1617144722
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/multiplicador.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/multiplicador.sv
+!i122 18
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/multiplicador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/multiplicador.sv|
+!i113 1
+R7
+R8
+R9
+vMux
+R1
+R10
+!i10b 1
+!s100 SE_^`;7PlZQ8Uh^;QV@f31
+R3
+Ik5[fc?W3:zmUZleA:4nm11
+R4
+S1
+R0
+w1617236961
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv
+!i122 17
+L0 1 20
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/Mux.sv|
+!i113 1
+R7
+R8
+R9
+n@mux
+vMux2_1
+R1
+R2
+!i10b 1
+!s100 P;O`?5PhBH5j6UOeXL<`=1
+R3
+IlZFe<8dRCPXQ?`EM0S:@;2
+R4
+S1
+R0
+w1623518747
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Mux2_1.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Mux2_1.sv
+!i122 31
+Z38 L0 1 12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Mux2_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Mux2_1.sv|
+!i113 1
+R7
+R15
+R9
+n@mux2_1
+vMuxMOV
+R1
+R13
+!i10b 1
+!s100 _@MUiDfTV^eX^lDEagLi_1
+R3
+Ic[[9UU5:kX`2MBb4I;z070
+R4
+S1
+R0
+w1623526841
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/MuxMOV.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/MuxMOV.sv
+!i122 38
+R21
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/MuxMOV.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/MuxMOV.sv|
+!i113 1
+R7
+R15
+R9
+n@mux@m@o@v
+vnegador_1b
+R1
+R10
+!i10b 1
+!s100 ]5Fc[B3ahgWSCdzi<^B7j1
+R3
+IjU]YCf8@QZU?21dFE?UHT0
+R4
+S1
+R0
+w1617172098
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_1b.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_1b.sv
+!i122 16
+L0 1 5
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_1b.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_1b.sv|
+!i113 1
+R7
+R8
+R9
+vnegador_nb
+R1
+R10
+!i10b 1
+!s100 cEb?laCRX<YCnKPAmH6fd3
+R3
+IIo;:cQk6O_L^n_[mDC0<[2
+R4
+S1
+R0
+w1617173148
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv
+!i122 15
+R38
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/negador_nb.sv|
+!i113 1
+R7
+R8
+R9
+vPC
+R1
+R2
+!i10b 1
+!s100 WEN5W7[1OAilKo]QO0Va;2
+R3
+IYXW@I3z3VLG1Bij83[AC;1
+R4
+S1
+R0
+w1623329224
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/PC.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/PC.sv
+!i122 32
+R38
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/PC.sv|
+!i113 1
+R7
+R15
+R9
+n@p@c
 vPixels
 R1
-Z31 !s110 1623718875
+Z39 !s110 1623815833
 !i10b 1
-!s100 7C`Il7ZP;HblN>ai;OdTZ1
+!s100 3Ba5mcCjCiL55V2Lok@I[0
 R3
-I;VV0[UO3nB69CV:Z_zOSS2
+IiB8;2ogO`:f>o4mEWD5FB1
 R4
 S1
 R0
-w1623716485
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv
+w1623815797
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv
 !i122 0
-L0 1 60
-R7
+L0 1 55
+R5
 r1
 !s85 0
 31
-Z32 !s108 1623718875.000000
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module/Pixels.sv|
+Z40 !s108 1623815833.000000
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module/Pixels.sv|
 !i113 1
+R7
+!s92 -sv -work work {+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/text-module}
 R9
-!s92 -sv -work work +incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/text-module
-R11
 n@pixels
 vRAM
 R1
@@ -187,132 +934,291 @@ R2
 !i10b 1
 !s100 BG1nVZnDnCGkkF[llO?_92
 R3
-IEG?5KUJ9b2<QG`IIWD6m=1
+IO@DbGoH=b4eG>aHhGXQdz3
 R4
 S1
 R0
-w1623717522
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/RAM.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/RAM.sv
-!i122 5
-R6
-R7
-r1
-!s85 0
-31
-R8
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/RAM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/RAM.sv|
-!i113 1
-R9
-Z33 !s92 -sv -work work +incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog
-R11
-n@r@a@m
-vsincronizadorH
-R1
-R2
-!i10b 1
-!s100 `hj]4YR]V0gZdLG6Djkna1
-R3
-I03=D3VdHS8L57lNY:lZmn1
-R4
-S1
-R0
+w1623723145
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/RAM.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/RAM.sv
+!i122 30
+R17
 R5
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv
-!i122 2
-L0 1 39
-R7
 r1
 !s85 0
 31
-R32
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorH.sv|
+R6
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/RAM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/RAM.sv|
 !i113 1
+R7
+R15
 R9
-R10
-R11
-nsincronizador@h
-vsincronizadorV
+n@r@a@m
+vRegister_File
+R1
+R16
+!i10b 1
+!s100 YBB4Z]LVKCiFkfZ=[Ojg31
+R3
+IG=TWBMRG6Md_g144YC=f[0
+R4
+S1
+R0
+R20
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv
+!i122 7
+R37
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Register_File.sv|
+!i113 1
+R7
+R15
+R9
+n@register_@file
+vrestador_nb
+R1
+R16
+!i10b 1
+!s100 `AY6f5Ge8=Xz[5V1M`4HJ1
+R3
+I`g?mg2DFmj17DgHFnAdPm3
+R4
+S1
+R0
+w1617184113
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv
+!i122 14
+R21
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/restador_nb.sv|
+!i113 1
+R7
+R8
+R9
+vROM
 R1
 R31
 !i10b 1
-!s100 4]PA;Xj4f[jJ`im8UIANS2
+!s100 z95XIYWf8PLQJ@>2>^iSk2
 R3
-IkJ30[VUhRMN_H0@3WCbRb3
+I[:CaNn0hj8EOUA69BOGC22
 R4
 S1
 R0
+w1623773655
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv
+!i122 43
+R21
 R5
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv
-!i122 1
-L0 1 36
-R7
 r1
 !s85 0
 31
 R32
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/sincronizadorV.sv|
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ROM.sv|
 !i113 1
+R7
+R15
 R9
-R10
+n@r@o@m
+vshiftL
+R1
+R16
+!i10b 1
+!s100 _`do4a68i0Ri^==V_0do80
+R3
+IQ[PO`kD3=<KV1hQeU1Mi50
+R4
+S1
+R0
+w1623549809
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftL.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftL.sv
+!i122 13
 R11
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftL.sv|
+!i113 1
+R7
+R8
+R9
+nshift@l
+vshiftR
+R1
+R16
+!i10b 1
+!s100 DnmBL9A3PJHmCCk1NTFj;1
+R3
+IBJDEM^=Bkcc3hW]K=og9m2
+R4
+S1
+R0
+w1617191858
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftR.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftR.sv
+!i122 12
+R11
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/shiftR.sv|
+!i113 1
+R7
+R8
+R9
+nshift@r
+vsincronizadorH
+R1
+R16
+!i10b 1
+!s100 `hj]4YR]V0gZdLG6Djkna1
+R3
+IS=@3=KCh6>j3^[XODCHi22
+R4
+S1
+R0
+w1622084894
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv
+!i122 3
+L0 1 39
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorH.sv|
+!i113 1
+R7
+R19
+R9
+nsincronizador@h
+vsincronizadorV
+R1
+R39
+!i10b 1
+!s100 4]PA;Xj4f[jJ`im8UIANS2
+R3
+IfHJIN84PYOQ`90NN=RW1U3
+R4
+S1
+R0
+w1622084915
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv
+!i122 2
+L0 1 36
+R5
+r1
+!s85 0
+31
+R40
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/sincronizadorV.sv|
+!i113 1
+R7
+R19
+R9
 nsincronizador@v
+vsumador_1b
+R1
+R16
+!i10b 1
+!s100 DIcJ6]J@4=jXF>YFimzQM2
+R3
+IoYeGReVX8n5ag]:Z>VOAE3
+R4
+S1
+R0
+w1617173839
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_1b.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_1b.sv
+!i122 11
+R11
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_1b.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_1b.sv|
+!i113 1
+R7
+R8
+R9
+vsumador_nb
+R1
+R16
+!i10b 1
+!s100 2M]e1<4K8B9CNnM<LTbh33
+R3
+IL<Cah0JCn9f0T^5h:V^JP2
+R4
+S1
+R0
+w1617182326
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv
+!i122 10
+L0 1 24
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/ALU/sumador_nb.sv|
+!i113 1
+R7
+R8
+R9
 vVGA
 R1
-R18
+R39
 !i10b 1
-!s100 c0=iHm1g7e@>]OGVW@Eg23
+!s100 a<zdW0N58lXmV>Z]4?ELl0
 R3
-ITKJ@?;V4CTb2khi<@XRB42
+Io?`88OfBoLg^h2@jf`@o:3
 R4
 S1
 R0
-w1623718180
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv
-!i122 7
-L0 1 311
-R7
-r1
-!s85 0
-31
-R8
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA/VGA.sv|
-!i113 1
-R9
-R10
-R11
-n@v@g@a
-vVGA_ROM_Test
-R1
-R2
-!i10b 1
-!s100 mA@?iO:Vk71N3J2PljD5:3
-R3
-Ie7DYC0PKV@SGfOK22dGe33
-R4
-S1
-R0
-w1623718817
-8C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA_ROM_Test.sv
-FC:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA_ROM_Test.sv
-!i122 6
+w1623793715
+8C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv
+FC:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv
+!i122 1
 L0 1 19
-R7
+R5
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA_ROM_Test.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog|C:/Users/josea/Desktop/TEC/JS/Final/CPU/verilog/VGA_ROM_Test.sv|
+R40
+!s107 C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA|C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA/VGA.sv|
 !i113 1
+R7
+R19
 R9
-R33
-R11
-n@v@g@a_@r@o@m_@test
+n@v@g@a

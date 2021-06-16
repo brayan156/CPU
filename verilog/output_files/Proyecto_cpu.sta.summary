@@ -3,147 +3,147 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clk_mitad_MHz:cmh|clk2'
-Slack : -92.243
-TNS   : -232092.679
+Slack : -90.218
+TNS   : -226247.535
 
 Type  : Slow 1100mV 85C Model Setup 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : -2.241
-TNS   : -35.049
+Slack : -2.044
+TNS   : -29.643
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -0.677
-TNS   : -1.258
+Slack : -0.764
+TNS   : -1.381
 
 Type  : Slow 1100mV 85C Model Hold 'clk_mitad_MHz:cmh|clk2'
-Slack : 0.220
+Slack : 0.219
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.366
+Slack : 0.380
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : 0.798
+Slack : 0.790
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_mitad_MHz:cmh|clk2'
 Slack : -2.174
-TNS   : -2448.379
+TNS   : -2521.714
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.433
-TNS   : -2.467
+Slack : -0.554
+TNS   : -2.832
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA:vga|sincronizadorH:sh|pasarlinea'
 Slack : -0.394
-TNS   : -8.657
+TNS   : -8.336
 
 Type  : Slow 1100mV 0C Model Setup 'clk_mitad_MHz:cmh|clk2'
-Slack : -93.662
-TNS   : -235560.995
+Slack : -91.475
+TNS   : -229440.297
 
 Type  : Slow 1100mV 0C Model Setup 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : -2.283
-TNS   : -35.279
+Slack : -2.108
+TNS   : -29.564
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -0.688
-TNS   : -1.240
+Slack : -0.719
+TNS   : -1.296
 
 Type  : Slow 1100mV 0C Model Hold 'clk_mitad_MHz:cmh|clk2'
-Slack : 0.225
+Slack : 0.281
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.341
+Slack : 0.351
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : 0.764
+Slack : 0.767
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_mitad_MHz:cmh|clk2'
 Slack : -2.174
-TNS   : -2456.030
+TNS   : -2447.472
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.429
-TNS   : -2.453
+Slack : -0.546
+TNS   : -2.804
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA:vga|sincronizadorH:sh|pasarlinea'
 Slack : -0.394
-TNS   : -8.726
+TNS   : -8.207
 
 Type  : Fast 1100mV 85C Model Setup 'clk_mitad_MHz:cmh|clk2'
-Slack : -52.737
-TNS   : -132318.707
+Slack : -51.592
+TNS   : -129595.727
 
 Type  : Fast 1100mV 85C Model Setup 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : -1.038
-TNS   : -14.818
+Slack : -0.799
+TNS   : -11.842
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -0.115
-TNS   : -0.115
+Slack : -0.280
+TNS   : -0.280
 
 Type  : Fast 1100mV 85C Model Hold 'clk_mitad_MHz:cmh|clk2'
-Slack : 0.038
+Slack : 0.140
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.153
+Slack : 0.163
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : 0.381
+Slack : 0.408
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_mitad_MHz:cmh|clk2'
 Slack : -2.174
-TNS   : -91.267
+TNS   : -80.263
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.411
-TNS   : -1.409
+Slack : -0.504
+TNS   : -1.973
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : 0.126
+Slack : 0.144
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clk_mitad_MHz:cmh|clk2'
-Slack : -49.075
-TNS   : -123135.081
+Slack : -47.965
+TNS   : -120466.381
 
 Type  : Fast 1100mV 0C Model Setup 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : -0.923
-TNS   : -13.210
+Slack : -0.720
+TNS   : -10.486
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -0.069
-TNS   : -0.069
-
-Type  : Fast 1100mV 0C Model Hold 'clk_mitad_MHz:cmh|clk2'
-Slack : -0.135
-TNS   : -0.135
+Slack : -0.192
+TNS   : -0.192
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.128
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk_mitad_MHz:cmh|clk2'
+Slack : 0.146
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : 0.342
+Slack : 0.365
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_mitad_MHz:cmh|clk2'
 Slack : -2.174
-TNS   : -81.023
+TNS   : -80.347
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.403
-TNS   : -1.384
+Slack : -0.491
+TNS   : -1.914
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA:vga|sincronizadorH:sh|pasarlinea'
-Slack : 0.130
+Slack : 0.146
 TNS   : 0.000
 
 ------------------------------------------------------------

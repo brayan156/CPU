@@ -1,0 +1,46 @@
+module final_test();
+
+	logic clk, reset, swxor2,swxor1,swxor0,swxor,swnot,swadd,swinit;
+	logic [7:0] R, G, B;
+	logic hsync, vsync, clk2, blank, sync;
+	
+	CPU_VGA uut(clk, reset, swxor2,swxor1,swxor0,swxor,swnot,swadd,swinit,R,G,B,hsync, vsync, clk2, blank, sync);
+
+	int r, g, b, i
+	initial begin
+		vgatext = $fopen("vga.txt", "w");
+
+		i = 'd0;
+		
+		clk=0; reset=0; swxor2=0;swxor1=0;swxor0=0;swxor=0;swnot=0;swadd=0;swinit=0; #3;
+		reset=1; #7;
+		reset=0; swxor1=1;swxor0=1; swxor=1; #500;
+		swinit=1; #10000000
+		
+		
+		while (i < 'd300000)
+			begin
+				@(posedge clk);
+					begin
+					
+						$fwrite(vgatext, "%d ns: ", i*'d10+'d10);
+					  50 ns: 1 1 000 000 00
+					  	$fwrite(vgatext, "%b ", hsync);
+						$fwrite(vgatext, "%b ", vsync);
+						$fwrite(vgatext, "%h ", R);
+						$fwrite(vgatext, "%h ", G);
+						$fwrite(vgatext, "%h \n", B);
+						i = i + 2;
+					end
+			end
+		$fclose(vgatext);
+		$finish;
+		
+	end
+	
+	
+	always begin
+		clk=!clk; #10;
+	end
+	
+endmodule 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proyecto_cpu
-Tue Jun 15 17:09:01 2021
+Tue Jun 15 22:15:42 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -92,7 +92,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jun 15 17:09:01 2021       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 15 22:15:42 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto_cpu                                ;
 ; Top-level Entity Name           ; CPU_VGA                                     ;
@@ -300,14 +300,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 5142                   ;
+; Estimate of Logic utilization (ALMs needed) ; 5248                   ;
 ;                                             ;                        ;
-; Combinational ALUT usage for logic          ; 7114                   ;
-;     -- 7 input functions                    ; 10                     ;
-;     -- 6 input functions                    ; 2955                   ;
-;     -- 5 input functions                    ; 2029                   ;
-;     -- 4 input functions                    ; 1301                   ;
-;     -- <=3 input functions                  ; 819                    ;
+; Combinational ALUT usage for logic          ; 7112                   ;
+;     -- 7 input functions                    ; 140                    ;
+;     -- 6 input functions                    ; 3040                   ;
+;     -- 5 input functions                    ; 1770                   ;
+;     -- 4 input functions                    ; 1327                   ;
+;     -- <=3 input functions                  ; 835                    ;
 ;                                             ;                        ;
 ; Dedicated logic registers                   ; 4238                   ;
 ;                                             ;                        ;
@@ -319,8 +319,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                        ;
 ; Maximum fan-out node                        ; clk_mitad_MHz:cmh|clk2 ;
 ; Maximum fan-out                             ; 4234                   ;
-; Total fan-out                               ; 48764                  ;
-; Average fan-out                             ; 4.26                   ;
+; Total fan-out                               ; 49033                  ;
+; Average fan-out                             ; 4.29                   ;
 +---------------------------------------------+------------------------+
 
 
@@ -329,10 +329,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |CPU_VGA                                        ; 7114 (1)            ; 4238 (0)                  ; 16384             ; 2          ; 38   ; 0            ; |CPU_VGA                                                                                                                                ; CPU_VGA             ; work         ;
-;    |CPU:cpu|                                    ; 3195 (0)            ; 353 (0)                   ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:cpu                                                                                                                        ; CPU                 ; work         ;
-;       |ALU:uut|                                 ; 2618 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut                                                                                                                ; ALU                 ; work         ;
-;          |Mux:m|                                ; 180 (180)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m                                                                                                          ; Mux                 ; work         ;
+; |CPU_VGA                                        ; 7112 (1)            ; 4238 (0)                  ; 16384             ; 2          ; 38   ; 0            ; |CPU_VGA                                                                                                                                ; CPU_VGA             ; work         ;
+;    |CPU:cpu|                                    ; 3189 (0)            ; 353 (0)                   ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:cpu                                                                                                                        ; CPU                 ; work         ;
+;       |ALU:uut|                                 ; 2615 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut                                                                                                                ; ALU                 ; work         ;
+;          |Mux:m|                                ; 177 (177)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m                                                                                                          ; Mux                 ; work         ;
 ;          |divisor_nb:div|                       ; 1134 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|divisor_nb:div                                                                                                 ; divisor_nb          ; work         ;
 ;             |lpm_divide:Div0|                   ; 1134 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|divisor_nb:div|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;                |lpm_divide_3dm:auto_generated|  ; 1134 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|divisor_nb:div|lpm_divide:Div0|lpm_divide_3dm:auto_generated                                                   ; lpm_divide_3dm      ; work         ;
@@ -411,17 +411,17 @@ https://fpgasoftware.intel.com/eula.
 ;             |sumador_1b:gen_loop[8].sum1b3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|sumador_nb:sum|sumador_1b:gen_loop[8].sum1b3                                                                   ; sumador_1b          ; work         ;
 ;             |sumador_1b:gen_loop[9].sum1b3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|sumador_nb:sum|sumador_1b:gen_loop[9].sum1b3                                                                   ; sumador_1b          ; work         ;
 ;             |sumador_1b:sum1b14|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|ALU:uut|sumador_nb:sum|sumador_1b:sum1b14                                                                              ; sumador_1b          ; work         ;
-;       |Control_Unit:c|                          ; 20 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c                                                                                                         ; Control_Unit        ; work         ;
-;          |Condition_Logic:cl|                   ; 8 (3)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c|Condition_Logic:cl                                                                                      ; Condition_Logic     ; work         ;
-;             |ff_enable:flagreg1|                ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1                                                                   ; ff_enable           ; work         ;
+;       |Control_Unit:c|                          ; 19 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c                                                                                                         ; Control_Unit        ; work         ;
+;          |Condition_Logic:cl|                   ; 7 (3)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c|Condition_Logic:cl                                                                                      ; Condition_Logic     ; work         ;
+;             |ff_enable:flagreg1|                ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c|Condition_Logic:cl|ff_enable:flagreg1                                                                   ; ff_enable           ; work         ;
 ;          |Decoder:dec|                          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Control_Unit:c|Decoder:dec                                                                                             ; Decoder             ; work         ;
-;       |Extender:ext|                            ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Extender:ext                                                                                                           ; Extender            ; work         ;
-;       |Imm_Rotation:ir|                         ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir                                                                                                        ; Imm_Rotation        ; work         ;
-;       |Mux2_1:Bmux|                             ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Mux2_1:Bmux                                                                                                            ; Mux2_1              ; work         ;
-;       |Mux2_1:resmux|                           ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Mux2_1:resmux                                                                                                          ; Mux2_1              ; work         ;
+;       |Extender:ext|                            ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Extender:ext                                                                                                           ; Extender            ; work         ;
+;       |Imm_Rotation:ir|                         ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir                                                                                                        ; Imm_Rotation        ; work         ;
+;       |Mux2_1:Bmux|                             ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Mux2_1:Bmux                                                                                                            ; Mux2_1              ; work         ;
+;       |Mux2_1:resmux|                           ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Mux2_1:resmux                                                                                                          ; Mux2_1              ; work         ;
 ;       |Mux2_1:rselector1mux|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Mux2_1:rselector1mux                                                                                                   ; Mux2_1              ; work         ;
 ;       |Mux2_1:rselector2mux|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Mux2_1:rselector2mux                                                                                                   ; Mux2_1              ; work         ;
-;       |MuxMOV:movmox|                           ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|MuxMOV:movmox                                                                                                          ; MuxMOV              ; work         ;
+;       |MuxMOV:movmox|                           ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|MuxMOV:movmox                                                                                                          ; MuxMOV              ; work         ;
 ;       |PC:pc|                                   ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|PC:pc                                                                                                                  ; PC                  ; work         ;
 ;       |Register_File:rf|                        ; 310 (310)           ; 320 (320)                 ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|Register_File:rf                                                                                                       ; Register_File       ; work         ;
 ;       |sumador_nb:sump4|                        ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|sumador_nb:sump4                                                                                                       ; sumador_nb          ; work         ;
@@ -484,12 +484,12 @@ https://fpgasoftware.intel.com/eula.
 ;          |sumador_1b:gen_loop[9].sum1b3|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|sumador_nb:sump8|sumador_1b:gen_loop[9].sum1b3                                                                         ; sumador_1b          ; work         ;
 ;          |sumador_1b:sum1b14|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|CPU:cpu|sumador_nb:sump8|sumador_1b:sum1b14                                                                                    ; sumador_1b          ; work         ;
 ;    |Character_manager:cm|                       ; 265 (265)           ; 1803 (1803)               ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Character_manager:cm                                                                                                           ; Character_manager   ; work         ;
-;    |Instruction_Memory:im|                      ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Instruction_Memory:im                                                                                                          ; Instruction_Memory  ; work         ;
-;    |Memory_Management:mm|                       ; 2862 (49)           ; 2056 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm                                                                                                           ; Memory_Management   ; work         ;
-;       |RAM:ram|                                 ; 2777 (2777)         ; 2056 (2056)               ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|RAM:ram                                                                                                   ; RAM                 ; work         ;
-;       |ROM:rom|                                 ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|ROM:rom                                                                                                   ; ROM                 ; work         ;
-;    |VGA:vga|                                    ; 751 (0)             ; 24 (0)                    ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga                                                                                                                        ; VGA                 ; work         ;
-;       |Pixels:p|                                ; 720 (720)           ; 1 (1)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p                                                                                                               ; Pixels              ; work         ;
+;    |Instruction_Memory:im|                      ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Instruction_Memory:im                                                                                                          ; Instruction_Memory  ; work         ;
+;    |Memory_Management:mm|                       ; 2879 (50)           ; 2056 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm                                                                                                           ; Memory_Management   ; work         ;
+;       |RAM:ram|                                 ; 2794 (2794)         ; 2056 (2056)               ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|RAM:ram                                                                                                   ; RAM                 ; work         ;
+;       |ROM:rom|                                 ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |CPU_VGA|Memory_Management:mm|ROM:rom                                                                                                   ; ROM                 ; work         ;
+;    |VGA:vga|                                    ; 740 (0)             ; 24 (0)                    ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga                                                                                                                        ; VGA                 ; work         ;
+;       |Pixels:p|                                ; 709 (709)           ; 1 (1)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p                                                                                                               ; Pixels              ; work         ;
 ;          |Font_Rom:rom|                         ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p|Font_Rom:rom                                                                                                  ; Font_Rom            ; work         ;
 ;             |altsyncram:ROM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p|Font_Rom:rom|altsyncram:ROM_rtl_0                                                                             ; altsyncram          ; work         ;
 ;                |altsyncram_8ud1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |CPU_VGA|VGA:vga|Pixels:p|Font_Rom:rom|altsyncram:ROM_rtl_0|altsyncram_8ud1:auto_generated                                              ; altsyncram_8ud1     ; work         ;
@@ -3353,11 +3353,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:cpu|Register_File:rf|register~327                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~455                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~359                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~326                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~358                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~454                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~390                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~422                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~326                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~454                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~358                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~389                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~421                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~325                             ; Stuck at GND due to stuck port clock_enable               ;
@@ -3368,21 +3368,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:cpu|Register_File:rf|register~452                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~388                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~420                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~323                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~355                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~451                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~387                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~419                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~323                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~451                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~355                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~322                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~354                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~450                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~386                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~418                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~322                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~450                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~354                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~321                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~353                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~449                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~385                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~417                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~321                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~449                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~353                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~393                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~425                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~329                             ; Stuck at GND due to stuck port clock_enable               ;
@@ -3433,36 +3433,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:cpu|Register_File:rf|register~446                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~414                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~478                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~342                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~374                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~438                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~406                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~438                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~342                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~470                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~374                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~405                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~437                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~341                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~469                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~373                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~332                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~364                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~428                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~396                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~460                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~339                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~371                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~403                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~435                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~467                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~401                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~433                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~337                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~465                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~369                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~331                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~363                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~395                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~427                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~331                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~459                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~363                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~334                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~366                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~430                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~398                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~462                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~397                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~429                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~333                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~461                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~365                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~340                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~372                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~436                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~404                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~468                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~394                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~426                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~330                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~458                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~362                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~402                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~434                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~338                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~466                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~370                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~336                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~368                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~432                             ; Stuck at GND due to stuck port clock_enable               ;
@@ -3473,31 +3483,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:cpu|Register_File:rf|register~335                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~463                             ; Stuck at GND due to stuck port clock_enable               ;
 ; CPU:cpu|Register_File:rf|register~367                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~330                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~362                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~426                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~394                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~458                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~403                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~435                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~339                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~467                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~371                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~338                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~370                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~434                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~402                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~466                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~401                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~433                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~337                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~465                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~369                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~405                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~437                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~341                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~469                             ; Stuck at GND due to stuck port clock_enable               ;
-; CPU:cpu|Register_File:rf|register~373                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~334                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~366                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~430                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~398                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~462                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~397                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~429                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~333                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~461                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~365                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~404                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~436                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~340                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~468                             ; Stuck at GND due to stuck port clock_enable               ;
+; CPU:cpu|Register_File:rf|register~372                             ; Stuck at GND due to stuck port clock_enable               ;
 ; Total Number of Removed Registers = 2970                          ;                                                           ;
 +-------------------------------------------------------------------+-----------------------------------------------------------+
 
@@ -3507,51 +3507,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
 ; Register name                         ; Reason for Removal             ; Registers Removed due to This Register                                        ;
 +---------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
-; CPU:cpu|Register_File:rf|register~391 ; Stuck at GND                   ; CPU:cpu|Register_File:rf|register~407, CPU:cpu|Register_File:rf|register~439, ;
-;                                       ; due to stuck port clock_enable ; CPU:cpu|Register_File:rf|register~343, CPU:cpu|Register_File:rf|register~471, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~375, CPU:cpu|Register_File:rf|register~344, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~376, CPU:cpu|Register_File:rf|register~440, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~408, CPU:cpu|Register_File:rf|register~472, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~409, CPU:cpu|Register_File:rf|register~441, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~345, CPU:cpu|Register_File:rf|register~473, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~377, CPU:cpu|Register_File:rf|register~346, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~378, CPU:cpu|Register_File:rf|register~442, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~410, CPU:cpu|Register_File:rf|register~474, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~411, CPU:cpu|Register_File:rf|register~443, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~347, CPU:cpu|Register_File:rf|register~475, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~379, CPU:cpu|Register_File:rf|register~348, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~380, CPU:cpu|Register_File:rf|register~444, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~412, CPU:cpu|Register_File:rf|register~476, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~413, CPU:cpu|Register_File:rf|register~445, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~349, CPU:cpu|Register_File:rf|register~477, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~381, CPU:cpu|Register_File:rf|register~342, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~374, CPU:cpu|Register_File:rf|register~438, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~406, CPU:cpu|Register_File:rf|register~470, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~332, CPU:cpu|Register_File:rf|register~364, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~428, CPU:cpu|Register_File:rf|register~396, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~460, CPU:cpu|Register_File:rf|register~397, ;
+; CPU:cpu|Register_File:rf|register~391 ; Stuck at GND                   ; CPU:cpu|Register_File:rf|register~344, CPU:cpu|Register_File:rf|register~376, ;
+;                                       ; due to stuck port clock_enable ; CPU:cpu|Register_File:rf|register~440, CPU:cpu|Register_File:rf|register~408, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~472, CPU:cpu|Register_File:rf|register~409, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~441, CPU:cpu|Register_File:rf|register~345, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~473, CPU:cpu|Register_File:rf|register~377, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~346, CPU:cpu|Register_File:rf|register~378, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~442, CPU:cpu|Register_File:rf|register~410, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~474, CPU:cpu|Register_File:rf|register~411, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~443, CPU:cpu|Register_File:rf|register~347, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~475, CPU:cpu|Register_File:rf|register~379, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~348, CPU:cpu|Register_File:rf|register~380, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~444, CPU:cpu|Register_File:rf|register~412, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~476, CPU:cpu|Register_File:rf|register~413, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~445, CPU:cpu|Register_File:rf|register~349, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~477, CPU:cpu|Register_File:rf|register~381, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~350, CPU:cpu|Register_File:rf|register~382, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~446, CPU:cpu|Register_File:rf|register~414, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~478, CPU:cpu|Register_File:rf|register~406, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~438, CPU:cpu|Register_File:rf|register~342, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~470, CPU:cpu|Register_File:rf|register~374, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~405, CPU:cpu|Register_File:rf|register~437, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~341, CPU:cpu|Register_File:rf|register~469, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~373, CPU:cpu|Register_File:rf|register~332, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~364, CPU:cpu|Register_File:rf|register~428, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~396, CPU:cpu|Register_File:rf|register~460, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~339, CPU:cpu|Register_File:rf|register~371, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~403, CPU:cpu|Register_File:rf|register~435, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~467, CPU:cpu|Register_File:rf|register~401, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~433, CPU:cpu|Register_File:rf|register~337, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~465, CPU:cpu|Register_File:rf|register~369, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~394, CPU:cpu|Register_File:rf|register~426, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~330, CPU:cpu|Register_File:rf|register~458, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~362, CPU:cpu|Register_File:rf|register~402, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~434, CPU:cpu|Register_File:rf|register~338, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~466, CPU:cpu|Register_File:rf|register~370, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~336, CPU:cpu|Register_File:rf|register~368, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~432, CPU:cpu|Register_File:rf|register~400, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~464, CPU:cpu|Register_File:rf|register~399, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~431, CPU:cpu|Register_File:rf|register~335, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~463, CPU:cpu|Register_File:rf|register~367, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~334, CPU:cpu|Register_File:rf|register~366, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~430, CPU:cpu|Register_File:rf|register~398, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~462, CPU:cpu|Register_File:rf|register~397, ;
 ;                                       ;                                ; CPU:cpu|Register_File:rf|register~429, CPU:cpu|Register_File:rf|register~333, ;
 ;                                       ;                                ; CPU:cpu|Register_File:rf|register~461, CPU:cpu|Register_File:rf|register~365, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~340, CPU:cpu|Register_File:rf|register~372, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~436, CPU:cpu|Register_File:rf|register~404, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~468, CPU:cpu|Register_File:rf|register~336, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~368, CPU:cpu|Register_File:rf|register~432, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~400, CPU:cpu|Register_File:rf|register~464, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~399, CPU:cpu|Register_File:rf|register~431, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~335, CPU:cpu|Register_File:rf|register~463, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~367, CPU:cpu|Register_File:rf|register~330, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~362, CPU:cpu|Register_File:rf|register~426, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~394, CPU:cpu|Register_File:rf|register~458, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~403, CPU:cpu|Register_File:rf|register~435, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~339, CPU:cpu|Register_File:rf|register~467, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~371, CPU:cpu|Register_File:rf|register~338, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~370, CPU:cpu|Register_File:rf|register~434, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~402, CPU:cpu|Register_File:rf|register~466, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~401, CPU:cpu|Register_File:rf|register~433, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~337, CPU:cpu|Register_File:rf|register~465, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~369, CPU:cpu|Register_File:rf|register~405, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~437, CPU:cpu|Register_File:rf|register~341, ;
-;                                       ;                                ; CPU:cpu|Register_File:rf|register~469, CPU:cpu|Register_File:rf|register~373  ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~404, CPU:cpu|Register_File:rf|register~436, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~340, CPU:cpu|Register_File:rf|register~468, ;
+;                                       ;                                ; CPU:cpu|Register_File:rf|register~372                                         ;
 ; CPU:cpu|Register_File:rf|register~389 ; Stuck at GND                   ; CPU:cpu|Register_File:rf|register~415, CPU:cpu|Register_File:rf|register~447, ;
 ;                                       ; due to stuck port clock_enable ; CPU:cpu|Register_File:rf|register~351, CPU:cpu|Register_File:rf|register~479, ;
 ;                                       ;                                ; CPU:cpu|Register_File:rf|register~383                                         ;
@@ -3838,7 +3841,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------+---------+
 ; VGA:vga|sincronizadorH:sh|hsync          ; 1       ;
 ; VGA:vga|sincronizadorV:sv|vsync          ; 1       ;
-; Character_manager:cm|decoded_line[18][1] ; 4       ;
+; Character_manager:cm|decoded_line[18][1] ; 5       ;
 ; Total number of inverted registers = 3   ;         ;
 +------------------------------------------+---------+
 
@@ -3857,37 +3860,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |CPU_VGA|VGA:vga|sincronizadorH:sh|contador[0]    ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |CPU_VGA|VGA:vga|sincronizadorV:sv|contador[3]    ;
-; 256:1              ; 8 bits    ; 1360 LEs      ; 1360 LEs             ; 0 LEs                  ; Yes        ; |CPU_VGA|Memory_Management:mm|RAM:ram|rdata[7]    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|VGA:vga|Pixels:p|Mux7                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Extender:ext|Mux3                ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |CPU_VGA|VGA:vga|sincronizadorH:sh|contador[9]    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |CPU_VGA|VGA:vga|sincronizadorV:sv|contador[4]    ;
+; 256:1              ; 8 bits    ; 1360 LEs      ; 1360 LEs             ; 0 LEs                  ; Yes        ; |CPU_VGA|Memory_Management:mm|RAM:ram|rdata[2]    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|VGA:vga|Pixels:p|Mux7                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Extender:ext|Mux2                ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
 ; 4:1                ; 18 bits   ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
-; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|MuxMOV:movmox|Mux1               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|MuxMOV:movmox|Mux28              ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|MuxMOV:movmox|Mux18              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|MuxMOV:movmox|Mux27              ;
 ; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|shiftL:Lshift|ShiftLeft0 ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|shiftL:Lshift|ShiftLeft0 ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|shiftL:Lshift|ShiftLeft0 ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|shiftL:Lshift|ShiftLeft0 ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Mux2_1:Bmux|result[1]            ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|Memory_Management:mm|mapadress[25]       ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Mux2_1:Bmux|result[26]           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Mux2_1:Bmux|result[5]            ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|Memory_Management:mm|mapadress[8]        ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Mux2_1:Bmux|result[24]           ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftRight0      ;
 ; 5:1                ; 13 bits   ; 39 LEs        ; 39 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftRight0      ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftRight0      ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|MuxMOV:movmox|Mux29              ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|MuxMOV:movmox|Mux30              ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Mux2_1:resmux|result[1]          ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|Imm_Rotation:ir|ShiftLeft0       ;
-; 12:1               ; 15 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m|Mux8               ;
-; 15:1               ; 12 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m|Mux26              ;
-; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m|Mux28              ;
+; 12:1               ; 15 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m|Mux4               ;
+; 15:1               ; 12 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m|Mux21              ;
+; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |CPU_VGA|CPU:cpu|ALU:uut|Mux:m|Mux30              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
@@ -4405,23 +4408,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR           ; 12                          ;
 ;     ENA SCLR          ; 1536                        ;
 ;     plain             ; 2059                        ;
-; arriav_lcell_comb     ; 7118                        ;
+; arriav_lcell_comb     ; 7116                        ;
 ;     arith             ; 1243                        ;
 ;         0 data inputs ; 120                         ;
 ;         1 data inputs ; 28                          ;
 ;         2 data inputs ; 15                          ;
 ;         4 data inputs ; 30                          ;
 ;         5 data inputs ; 1050                        ;
-;     extend            ; 10                          ;
-;         7 data inputs ; 10                          ;
-;     normal            ; 5840                        ;
+;     extend            ; 140                         ;
+;         7 data inputs ; 140                         ;
+;     normal            ; 5708                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 116                         ;
-;         3 data inputs ; 513                         ;
-;         4 data inputs ; 1271                        ;
-;         5 data inputs ; 979                         ;
-;         6 data inputs ; 2955                        ;
+;         2 data inputs ; 124                         ;
+;         3 data inputs ; 521                         ;
+;         4 data inputs ; 1297                        ;
+;         5 data inputs ; 720                         ;
+;         6 data inputs ; 3040                        ;
 ;     shared            ; 25                          ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 6                           ;
@@ -4432,7 +4435,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 110.20                      ;
-; Average LUT depth     ; 63.48                       ;
+; Average LUT depth     ; 63.59                       ;
 +-----------------------+-----------------------------+
 
 
@@ -4441,7 +4444,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:28     ;
+; Top            ; 00:00:29     ;
 +----------------+--------------+
 
 
@@ -4451,7 +4454,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 15 17:08:24 2021
+    Info: Processing started: Tue Jun 15 22:15:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto_cpu -c Proyecto_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -4561,6 +4564,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file vga_rom
     Info (12023): Found entity 1: VGA_ROM_Test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/VGA_ROM_Test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file character_manager.sv
     Info (12023): Found entity 1: Character_manager File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/Character_manager.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file final_test.sv
+    Info (12023): Found entity 1: final_test File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/final_test.sv Line: 1
 Info (12127): Elaborating entity "CPU_VGA" for the top level hierarchy
 Info (12128): Elaborating entity "clk_mitad_MHz" for hierarchy "clk_mitad_MHz:cmh" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 12
 Info (12128): Elaborating entity "CPU" for hierarchy "CPU:cpu" File: C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/CPU_VGA.sv Line: 15
@@ -4705,17 +4710,17 @@ Info (17049): 515 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/braya/Desktop/taller de diseno/proyecto/Git_proyecto/CPU/verilog/output_files/Proyecto_cpu.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11089 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11087 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 11041 logic cells
+    Info (21061): Implemented 11039 logic cells
     Info (21064): Implemented 8 RAM segments
     Info (21062): Implemented 2 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 4998 megabytes
-    Info: Processing ended: Tue Jun 15 17:09:01 2021
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 4999 megabytes
+    Info: Processing ended: Tue Jun 15 22:15:42 2021
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:46
 
 
 +------------------------------------------+

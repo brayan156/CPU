@@ -34,7 +34,7 @@ module Pixels (input logic [7:0] text[703:0],
 		pixel = 0;
 	
 		// If current pixel is in the horizontal range of text
-		if (horzCoord >= posX && horzCoord < posX + 640) begin
+		if (horzCoord >= posX && horzCoord < posX + 512) begin
 			inXRange = 1;
 		end
 		
