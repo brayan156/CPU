@@ -40,7 +40,7 @@ module Decoder(input logic [1:0] Intr_Mode,
 				4'b1100: ALU_selec = 4'b0110; // ORR
 				4'b0001: ALU_selec = 4'b0111; // XOR
 				4'b1010:begin ALU_selec = 4'b0001; wregister_boolean=0; end //CMP
-				4'b1101:begin mov_selec=1;	ALU_selec = (I_Function_S[5]) ? 4'b0000: 4'b1000; end // MOV/shift
+				4'b1101:begin mov_selec=1;	ALU_selec = (I_Function_S[5]) ? 4'b0000: 4'b1000; end // MOV/Lshift
 				default: ALU_selec = 4'bx; // unimplemented
 			endcase
 		// update flags if S bit is set (C & V only for arith)

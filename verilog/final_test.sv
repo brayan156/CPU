@@ -6,6 +6,9 @@ module final_test();
 	
 	CPU_VGA uut(clk, reset, swxor2,swxor1,swxor0,swxor,swnot,swadd,swinit,R,G,B,hsync, vsync, clk2, blank, sync);
 
+	//una vez obtenido el el txt utilizar en https://ericeastwood.com/lab/vga-simulator/ resolucion 640x480  clk=50MHz
+	// back porch x= 48, back porch y= 31 y darle a submit
+	
 		// synthesis translate_off
 	
 	int r, g, b, i,vgatext,empieza;
